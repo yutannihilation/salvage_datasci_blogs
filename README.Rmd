@@ -1,0 +1,80 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Salvage @datasci_blogs's Tweets
+
+## Get data
+
+```{r get-data}
+library(rtweet)
+library(dplyr, warn.conflicts = FALSE)
+library(tidyr)
+
+tw <- get_timeline("datasci_blogs", n = 3200)
+```
+
+## Extract useful infomation
+
+```{r extract}
+d <- tw %>%
+  select(status_id, created_at, url = urls_expanded_url, text) %>%
+  unnest(url) %>%
+  filter(!is.na(url)) %>%
+  mutate(type = case_when(
+    stringr::str_detect(text, "^【(.*)】 (.*) https://t.co") ~ "title_first",
+    stringr::str_detect(text, "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n") ~ "url_first",
+    TRUE ~ "other"
+  )) %>%
+    split(.$type)
+
+result <- list()
+
+result$title_first <- d$title_first %>% 
+  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 (.*) https://t.co")
+
+result$url_first <- d$url_first %>%
+  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n")
+
+result$other <- d$other %>%
+  mutate(text,
+         blog_title = stringr::str_extract(text, "(?<=【)(.*)(?=】)"),
+         post_title = NA) %>%
+  select(-text)
+
+data <- bind_rows(result)
+```
+
+```{r writeout_to_csv}
+readr::write_csv(data, "datasci_blogs.csv")
+```
+
+## TODO: Get real URLs
+
+```{r curl}
+library(curl)
+
+get_location <- function(url, handle) {
+  res <- curl_fetch_memory("http://ift.tt/2zPsZBA", handle = handle)
+  parse_headers_list(res$headers)$location
+}
+
+h <- new_handle(followlocation = FALSE,
+                customrequest = "HEAD",
+                nobody = TRUE)
+
+# WARNING: this takes several tens of minutes
+r <- purrr::map(ifttt_urls, purrr::safely(get_location), handle = h)
+ifttt_urls_table <- purrr::map_chr(r, "result")
+
+data2 <- mutate(data, real_url = coalesce(ifttt_urls_table[url], url))
+```
