@@ -15,17 +15,19 @@ knitr::opts_chunk$set(
 
 ## Get data
 
-```{r get-data}
+```{r load-library}
 library(rtweet)
 library(dplyr, warn.conflicts = FALSE)
 library(tidyr)
+```
 
+```{r get-data, eval=!file.exists("datasci_blogs.csv")}
 tw <- get_timeline("datasci_blogs", n = 3200)
 ```
 
 ## Extract useful infomation
 
-```{r extract}
+```{r extract, eval=!file.exists("datasci_blogs.csv")}
 d <- tw %>%
   select(status_id, created_at, url = urls_expanded_url, text) %>%
   unnest(url) %>%
@@ -54,13 +56,13 @@ result$other <- d$other %>%
 data <- bind_rows(result)
 ```
 
-```{r writeout_to_csv}
-readr::write_csv(data, "datasci_blogs.csv")
+```{r writeout_to_csv, eval=!file.exists("datasci_blogs.csv")}
+readr::write_csv(data, "datasci_blogs_raw.csv")
 ```
 
-## TODO: Get real URLs
+## Get real URLs
 
-```{r curl}
+```{r curl, eval=!file.exists("datasci_blogs.csv")}
 library(curl)
 
 get_location <- function(url, handle) {
@@ -83,6 +85,40 @@ ifttt_urls_table <- purrr::map_chr(r, "result")
 
 ## Combine data and write out as a CSV
 
-```{r save-data2}
+```{r save-data2, eval=!file.exists("datasci_blogs.csv")}
 data2 <- mutate(data, real_url = coalesce(ifttt_urls_table[url], url))
+readr::write_csv(data2, "datasci_blogs.csv")
 ```
+
+## Load data
+
+```{r load_data}
+d <- readr::read_csv("datasci_blogs.csv", col_types = readr::cols(status_id = readr::col_character()))
+```
+
+## Explore data
+
+### Count
+
+```{r count, results='asis'}
+d %>%
+  count(blog_title, sort = TRUE) %>%
+  head(20) %>% 
+  knitr::kable()
+```
+
+### Check if the URLs are valid
+
+```{r strange-title}
+d %>%
+  mutate(base_url = stringr::str_extract(real_url, "^https?://[^/]+/?")) %>%
+  group_by(blog_title) %>%
+  summarise(urls = list(unique(base_url))) %>%
+  filter(purrr::map_int(urls, length) > 1) %>% 
+  knitr::kable()
+```
+
+考察:
+* ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。
+* しかし、たしかにURLがあってるのかよくわからない投稿がある: https://twitter.com/datasci_blogs/status/829964157386637313
+* QiitaのRSSはユーザごとに違うので個別対処が必要そう
