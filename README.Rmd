@@ -64,7 +64,7 @@ readr::write_csv(data, "datasci_blogs.csv")
 library(curl)
 
 get_location <- function(url, handle) {
-  res <- curl_fetch_memory("http://ift.tt/2zPsZBA", handle = handle)
+  res <- curl_fetch_memory(url, handle = handle)
   parse_headers_list(res$headers)$location
 }
 
@@ -74,7 +74,15 @@ h <- new_handle(followlocation = FALSE,
 
 # WARNING: this takes several tens of minutes
 r <- purrr::map(ifttt_urls, purrr::safely(get_location), handle = h)
-ifttt_urls_table <- purrr::map_chr(r, "result")
 
+# confirm there are no errors
+purrr::keep(r, ~ !is.null(.$error))
+
+ifttt_urls_table <- purrr::map_chr(r, "result")
+```
+
+## Combine data and write out as a CSV
+
+```{r save-data2}
 data2 <- mutate(data, real_url = coalesce(ifttt_urls_table[url], url))
 ```
