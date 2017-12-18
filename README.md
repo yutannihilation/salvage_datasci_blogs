@@ -13,6 +13,7 @@ library(tidyr)
 ```
 
 ``` r
+# 3200 is the limit of the API (c.f. https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline)
 tw <- get_timeline("datasci_blogs", n = 3200)
 ```
 
@@ -223,4 +224,8 @@ d %>%
 | 緑茶思考ブログ                                 | <http://yusuke-ujitoko.hatenablog.com/>, <https://arxiv.org/>, <http://www.cv-foundation.org/>, <http://cs231n.stanford.edu/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | NA                                             | <http://bit.ly/>, <http://tekenuko.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-考察: \* ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。 \* しかし、たしかにURLがあってるのかよくわからない投稿がある: <https://twitter.com/datasci_blogs/status/829964157386637313> \* QiitaのRSSはユーザごとに違うので個別対処が必要そう
+考察:
+
+-   ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。
+-   しかし、たしかにURLがあってるのかよくわからない投稿がある: <https://twitter.com/datasci_blogs/status/829964157386637313>
+-   QiitaのRSSはユーザごとに違うので個別対処が必要そう

@@ -22,6 +22,7 @@ library(tidyr)
 ```
 
 ```{r get-data, eval=!file.exists("datasci_blogs.csv")}
+# 3200 is the limit of the API (c.f. https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline)
 tw <- get_timeline("datasci_blogs", n = 3200)
 ```
 
@@ -119,6 +120,7 @@ d %>%
 ```
 
 考察:
+
 * ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。
 * しかし、たしかにURLがあってるのかよくわからない投稿がある: https://twitter.com/datasci_blogs/status/829964157386637313
 * QiitaのRSSはユーザごとに違うので個別対処が必要そう
