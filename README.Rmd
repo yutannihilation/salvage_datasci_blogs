@@ -13,57 +13,86 @@ knitr::opts_chunk$set(
 
 # Salvage @datasci_blogs's Tweets
 
-## Get data
+## データ取得
 
 ```{r load-library}
 library(rtweet)
 library(dplyr, warn.conflicts = FALSE)
+library(purrr)
+library(readr)
 library(tidyr)
 ```
 
-```{r get-data, eval=!file.exists("datasci_blogs.csv")}
+```{r get-data, cache=file.exists("urls.txt")}
 # 3200 is the limit of the API (c.f. https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline)
 tw <- get_timeline("datasci_blogs", n = 3200)
 ```
 
-## Extract useful infomation
+## 記事URLを取り出す
 
-```{r extract, eval=!file.exists("datasci_blogs.csv")}
-d <- tw %>%
-  select(status_id, created_at, url = urls_expanded_url, text) %>%
-  unnest(url) %>%
-  filter(!is.na(url)) %>%
-  mutate(type = case_when(
-    stringr::str_detect(text, "^【(.*)】 (.*) https://t.co") ~ "title_first",
-    stringr::str_detect(text, "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n") ~ "url_first",
-    TRUE ~ "other"
+### 記事URLがゼロ個のもの
+
+URLが含まれないツイートは3200件中16件。無視。RSSの設定が間違ってた場合とか？
+
+```{r wrong-tweets, cache=file.exists("urls.txt")}
+tw %>%
+  filter(is.na(urls_expanded_url)) %>%
+  pull(text)
+```
+
+### 記事URLが1つのもの
+
+そのまま使う
+
+```{r split-tweet, cache=file.exists("urls.txt")}
+tw_list <- tw %>%
+  select(status_id, created_at, urls_expanded_url, urls_t.co, text) %>%
+  filter(!is.na(urls_expanded_url)) %>%
+  split(map_int(.$urls_expanded_url, length) > 1)
+
+urls_single <- map_chr(tw_list$`FALSE`$urls_expanded_url, 1)
+```
+
+### 記事URLが2つ以上のもの
+
+`text`と照らし合わせて使う。
+
+```{r urls_double, cache=file.exists("urls.txt")}
+urls_double <- tw_list$`TRUE` %>%
+  # メインのURLを取り出す
+  mutate(urls_main = coalesce(
+    stringr::str_match(text, "^【.*】 (https://t.co/[[:alnum:]]+) .*")[,2],
+    stringr::str_match(text, "^【.*】 .* (https://t.co/[[:alnum:]]+)")[,2],
+    stringr::str_match(text, stringr::regex("^【.*(https://t.co/[[:alnum:]]+)$", dotall = TRUE))[,2]
   )) %>%
-    split(.$type)
-
-result <- list()
-
-result$title_first <- d$title_first %>% 
-  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 (.*) https://t.co")
-
-result$url_first <- d$url_first %>%
-  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n")
-
-result$other <- d$other %>%
-  mutate(text,
-         blog_title = stringr::str_extract(text, "(?<=【)(.*)(?=】)"),
-         post_title = NA) %>%
-  select(-text)
-
-data <- bind_rows(result)
+  # それに対応するexpanded URLを取り出す
+  pmap_chr(function(urls_main, urls_expanded_url, urls_t.co, ...) {
+    unique(urls_expanded_url[urls_main == urls_t.co])
+  })
 ```
 
-```{r writeout_to_csv, eval=!file.exists("datasci_blogs.csv")}
-readr::write_csv(data, "datasci_blogs_raw.csv")
+### 結合して保存
+
+```{r combine, cache=file.exists("urls.txt")}
+urls <- c(urls_single, urls_double)
+write_lines(urls, "urls.txt")
 ```
 
-## Get real URLs
+## 本当のURLを取得
 
-```{r curl, eval=!file.exists("datasci_blogs.csv")}
+ここはシェル芸でやった
+
+```sh
+for URL in $(cat urls.txt); do
+  curl -s -L -I $URL | \
+  awk -v"OFS=," -v"short=$URL" '$1 == "Location:" {real=$2}; END{print short,real}' | \
+  tail -1
+done | tee real_urls.txt
+```
+
+参考までに、たぶんRでやるならこう。
+
+```{r curl, eval=FALSE}
 library(curl)
 
 get_location <- function(url, handle) {
@@ -84,43 +113,24 @@ purrr::keep(r, ~ !is.null(.$error))
 ifttt_urls_table <- purrr::map_chr(r, "result")
 ```
 
-## Combine data and write out as a CSV
-
-```{r save-data2, eval=!file.exists("datasci_blogs.csv")}
-data2 <- mutate(data, real_url = coalesce(ifttt_urls_table[url], url))
-readr::write_csv(data2, "datasci_blogs.csv")
-```
-
-## Load data
+## スクレイピング行為に及ぶ前にURLをもうちょっと眺める
 
 ```{r load_data}
-d <- readr::read_csv("datasci_blogs.csv", col_types = readr::cols(status_id = readr::col_character()))
-```
+urls <- read_csv("real_urls.txt", col_names = c("short", "real"))
 
-## Explore data
+urls_df <- tibble(urls = coalesce(urls$real, urls$short),
+                  base_urls = stringr::str_extract(urls, "^https?://[^/]+/?"))
 
-### Count
-
-```{r count, results='asis'}
-d %>%
-  count(blog_title, sort = TRUE) %>%
-  head(20) %>% 
+urls_df %>%
+  count(base_urls, sort = TRUE) %>%
+  filter(n > 1) %>%
   knitr::kable()
 ```
 
-### Check if the URLs are valid
+特別対応が必要そうなのは、
 
-```{r strange-title}
-d %>%
-  mutate(base_url = stringr::str_extract(real_url, "^https?://[^/]+/?")) %>%
-  group_by(blog_title) %>%
-  summarise(urls = list(unique(base_url))) %>%
-  filter(purrr::map_int(urls, length) > 1) %>% 
-  knitr::kable()
-```
+* http://d.hatena.ne.jp/
+* https://qiita.com/
+* http://rpubs.com/
 
-考察:
-
-* ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。
-* しかし、たしかにURLがあってるのかよくわからない投稿がある: https://twitter.com/datasci_blogs/status/829964157386637313
-* QiitaのRSSはユーザごとに違うので個別対処が必要そう
+くらい。github.comになってるやつは明らかにミスってるけど、まあ2件だけなので無視。

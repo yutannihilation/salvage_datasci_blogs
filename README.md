@@ -3,12 +3,14 @@
 Salvage @datasci\_blogs's Tweets
 ================================
 
-Get data
---------
+データ取得
+----------
 
 ``` r
 library(rtweet)
 library(dplyr, warn.conflicts = FALSE)
+library(purrr)
+library(readr)
 library(tidyr)
 ```
 
@@ -17,44 +19,87 @@ library(tidyr)
 tw <- get_timeline("datasci_blogs", n = 3200)
 ```
 
-Extract useful infomation
--------------------------
+記事URLを取り出す
+-----------------
+
+### 記事URLがゼロ個のもの
+
+URLが含まれないツイートは3200件中16件。無視。RSSの設定が間違ってた場合とか？
 
 ``` r
-d <- tw %>%
-  select(status_id, created_at, url = urls_expanded_url, text) %>%
-  unnest(url) %>%
-  filter(!is.na(url)) %>%
-  mutate(type = case_when(
-    stringr::str_detect(text, "^【(.*)】 (.*) https://t.co") ~ "title_first",
-    stringr::str_detect(text, "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n") ~ "url_first",
-    TRUE ~ "other"
+tw %>%
+  filter(is.na(urls_expanded_url)) %>%
+  pull(text)
+#>  [1] "hatenablogとIFTTTの連携エラーを修正するために試行錯誤していたところ、登録データを誤って飛ばしてしまいましたので、本アカウントの活動は当面停止します。長らくありがとうございました。"                                     
+#>  [2] "【Revolutions】 Estimating mean variance and mean absolute bias of a regression tree by bootstrapping using foreach and rpart packages …"                                                                               
+#>  [3] "【Google Research Blog】 Highlights from the Annual Google PhD Fellowship Summit, and Announcing the 2017 Google PhD Fellows …"                                                                                         
+#>  [4] "【糞ネット弁慶】 [論文] Modeling Consumer Preferences and Price Sensitivities from Large-Scale Grocery Shopping Transaction Logs (WWW 2017) 読んだ …"                                                                   
+#>  [5] "【Blog - Applied Predictive Modeling】 Do Resampling Estimates Have Low Correlation to the Truth? The Answer May Shock You. …"                                                                                          
+#>  [6] "【唯物是真 Scaled_Wurm】 A Parser-blocking, cross site (i.e. different eTLD+1) script, 「URL」, is invoked via document.write. …"                                                                                       
+#>  [7] "【株式会社ホクソエムのブログ】 /2017/04/08/global-tokyor2/ Global Tokyo.Rに参加しました \n\n2017年4月1日、ドイツのRユーザ henningswayが東京へやって来るということで、Global Tokyo.R#2が開催されました。…"               
+#>  [8] "【From Pure Math to Applied Math】 【Recsys2016】Adaptive, Personalized Diversity for Visual Discovery (AmazonStream)に関するメモ …"                                                                                    
+#>  [9] "【learn data science - Medium】 Finding Similarities Among California Counties based on 2016 Election Result with dist, mds, and… …"                                                                                   
+#> [10] "【suryu.me】 tidyverse脳になって階層構造のあるデータフレームを使いこなそう /post/r_advent_calendar_day3/ \n\nyutannihilationが書いたtidyverseの記事を眠気眼の状態で読んでしまって、眠気も吹き飛んで3時起きし…"          
+#> [11] "【suryu.me】 configパッケージで楽々環境変数の管理 /post/r_advent_calendar_day2/ \n\nみなさん、Rの環境変数についてどのように管理されていますか？.Rprofileですか？それも良い方法です。ただ、Rprojectによるプロジェクト単…"
+#> [12] "【suryu.me】 extrafont ggplot2で日本語ラベル (ver. 2.2.0 向け) /post/visualization_advent_calendar_day2/ \n\n一人visualizationの2日目（2つめの記事です。アドベントカレンダーとはなん…"                                  
+#> [13] "【suryu.me】 Rで方位記号を描く (ggsn版) /post/rgis_advent_calendar_day2/ \n\n読んでいるブログの中でこんな記事を見ました。\n\nRで方位記号を描く\n\nこの記事では{prettymapr}というパッケージが使われているのですが、ちょ…"
+#> [14] "【No Free Hunch】 A Challenge to Analyze the World’s Most Interesting Data: The Department of Commerce Publishes its Datasets on Kaggle …"                                                                             
+#> [15] "【R code, simulations, and modeling】 R code for fitting a multiple (nonlinear) quantile regression model by means of a copula …"                                                                                       
+#> [16] "【Cortana Intelligence and Machine Learning Blog】 Major Breakthroughs from Microsoft Research this Week <U+2013> in Conversational Speech, FPGA Acc…"
+```
+
+### 記事URLが1つのもの
+
+そのまま使う
+
+``` r
+tw_list <- tw %>%
+  select(status_id, created_at, urls_expanded_url, urls_t.co, text) %>%
+  filter(!is.na(urls_expanded_url)) %>%
+  split(map_int(.$urls_expanded_url, length) > 1)
+
+urls_single <- map_chr(tw_list$`FALSE`$urls_expanded_url, 1)
+```
+
+### 記事URLが2つ以上のもの
+
+`text`と照らし合わせて使う。
+
+``` r
+urls_double <- tw_list$`TRUE` %>%
+  # メインのURLを取り出す
+  mutate(urls_main = coalesce(
+    stringr::str_match(text, "^【.*】 (https://t.co/[[:alnum:]]+) .*")[,2],
+    stringr::str_match(text, "^【.*】 .* (https://t.co/[[:alnum:]]+)")[,2],
+    stringr::str_match(text, stringr::regex("^【.*(https://t.co/[[:alnum:]]+)$", dotall = TRUE))[,2]
   )) %>%
-    split(.$type)
-
-result <- list()
-
-result$title_first <- d$title_first %>% 
-  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 (.*) https://t.co")
-
-result$url_first <- d$url_first %>%
-  extract(text, into = c("blog_title", "post_title"), regex = "^【(.*)】 https://t.co/[[:alnum:]]+ (.*)\n\n")
-
-result$other <- d$other %>%
-  mutate(text,
-         blog_title = stringr::str_extract(text, "(?<=【)(.*)(?=】)"),
-         post_title = NA) %>%
-  select(-text)
-
-data <- bind_rows(result)
+  # それに対応するexpanded URLを取り出す
+  pmap_chr(function(urls_main, urls_expanded_url, urls_t.co, ...) {
+    unique(urls_expanded_url[urls_main == urls_t.co])
+  })
 ```
+
+### 結合して保存
 
 ``` r
-readr::write_csv(data, "datasci_blogs_raw.csv")
+urls <- c(urls_single, urls_double)
+write_lines(urls, "urls.txt")
 ```
 
-Get real URLs
--------------
+本当のURLを取得
+---------------
+
+ここはシェル芸でやった
+
+``` sh
+for URL in $(cat urls.txt); do
+  curl -s -L -I $URL | \
+  awk -v"OFS=," -v"short=$URL" '$1 == "Location:" {real=$2}; END{print short,real}' | \
+  tail -1
+done | tee real_urls.txt
+```
+
+参考までに、たぶんRでやるならこう。
 
 ``` r
 library(curl)
@@ -77,155 +122,146 @@ purrr::keep(r, ~ !is.null(.$error))
 ifttt_urls_table <- purrr::map_chr(r, "result")
 ```
 
-Combine data and write out as a CSV
------------------------------------
+スクレイピング行為に及ぶ前にURLをもうちょっと眺める
+---------------------------------------------------
 
 ``` r
-data2 <- mutate(data, real_url = coalesce(ifttt_urls_table[url], url))
-readr::write_csv(data2, "datasci_blogs.csv")
-```
+urls <- read_csv("real_urls.txt", col_names = c("short", "real"))
+#> Parsed with column specification:
+#> cols(
+#>   short = col_character(),
+#>   real = col_character()
+#> )
 
-Load data
----------
+urls_df <- tibble(urls = coalesce(urls$real, urls$short),
+                  base_urls = stringr::str_extract(urls, "^https?://[^/]+/?"))
 
-``` r
-d <- readr::read_csv("datasci_blogs.csv", col_types = readr::cols(status_id = readr::col_character()))
-```
-
-Explore data
-------------
-
-### Count
-
-``` r
-d %>%
-  count(blog_title, sort = TRUE) %>%
-  head(20) %>% 
+urls_df %>%
+  count(base_urls, sort = TRUE) %>%
+  filter(n > 1) %>%
   knitr::kable()
 ```
 
-| blog\_title                                      |    n|
-|:-------------------------------------------------|----:|
-| Revolutions                                      |  389|
-| Technically, technophobic.                       |  144|
-| Statistical Modeli                               |  125|
-| Cortana Intelligence and Machine Learning Blog   |  124|
-| Google Research Blog                             |  105|
-| 廿TT                                             |  102|
-| 驚異のアニヲタ社会復帰への道                     |   94|
-| Rの解析に役に立つ記事 <U+2013> からだにいいもの  |   89|
-| Healthy Algorithms                               |   82|
-| RStudio Blog                                     |   80|
-| No Free Hunch                                    |   65|
-| R <U+2013> Xi'an's Og                            |   62|
-| RPubs                                            |   60|
-| kivantium活動日記                                |   59|
-| 唯物是真 Scaled\_Wurm                            |   48|
-| Water Programming: A Collaborative Research Blog |   46|
-| にほんごのれんしゅう                             |   44|
-| 歩いたら休め                                     |   43|
-| learn dplyr - Medium                             |   41|
-| kazutanの投稿 - Qiita                            |   40|
+| base\_urls                                      |    n|
+|:------------------------------------------------|----:|
+| <http://blog.revolutionanalytics.com/>          |  387|
+| <http://d.hatena.ne.jp/>                        |  234|
+| <https://qiita.com/>                            |  200|
+| <http://notchained.hatenablog.com/>             |  165|
+| <https://blogs.technet.microsoft.com/>          |  144|
+| <http://andrewgelman.com/>                      |  125|
+| <https://research.googleblog.com/>              |  120|
+| <https://www.karada-good.net/>                  |  100|
+| <http://abrahamcow.hatenablog.com/>             |   94|
+| <http://blog.kaggle.com/>                       |   83|
+| <https://blog.rstudio.com/>                     |   78|
+| <https://xianblog.wordpress.com/>               |   74|
+| <http://rpubs.com/>                             |   73|
+| <https://blog.exploratory.io/>                  |   72|
+| <http://kivantium.hateblo.jp/>                  |   56|
+| <https://waterprogramming.wordpress.com/>       |   55|
+| <https://healthyalgorithms.com/>                |   53|
+| <http://kiito.hatenablog.com/>                  |   49|
+| <http://sucrose.hatenablog.com/>                |   46|
+| <http://catindog.hatenablog.com/>               |   37|
+| <http://dirk.eddelbuettel.com/>                 |   36|
+| <http://soqdoq.com/>                            |   30|
+| <http://tekenuko.hatenablog.com/>               |   27|
+| <http://uribo.hatenablog.com/>                  |   27|
+| <https://kazutan.github.io/>                    |   27|
+| <http://doingbayesiandataanalysis.blogspot.jp/> |   25|
+| <http://r-statistics-fan.hatenablog.com/>       |   25|
+| <https://logics-of-blue.com/>                   |   25|
+| <http://kamonohashiperry.com/>                  |   24|
+| <http://yusuke-ujitoko.hatenablog.com/>         |   23|
+| <http://hikaru1122.hatenadiary.jp/>             |   22|
+| <http://varianceexplained.org/>                 |   22|
+| <https://www.fisproject.jp/>                    |   22|
+| <http://kosugitti.net/>                         |   21|
+| <http://nonbiri-tereka.hatenablog.com/>         |   21|
+| <http://statmodeling.hatenablog.com/>           |   21|
+| <http://aidiary.hatenablog.com/>                |   20|
+| <https://mrunadon.github.io/>                   |   20|
+| <http://yutori-datascience.hatenablog.com/>     |   18|
+| <http://id.fnshr.info/>                         |   16|
+| <http://ill-identified.hatenablog.com/>         |   14|
+| <http://musyoku.github.io/>                     |   14|
+| <http://norimune.net/>                          |   14|
+| <http://tjo.hatenablog.com/>                    |   14|
+| <http://yamaguchiyuto.hatenablog.com/>          |   14|
+| <http://www.buildingwidgets.com/>               |   13|
+| <https://research.preferred.jp/>                |   13|
+| <https://suryu.me/>                             |   13|
+| <http://fastml.com/>                            |   12|
+| <http://rindai87.hatenablog.jp/>                |   12|
+| <http://xiangze.hatenablog.com/>                |   12|
+| <http://mathetake.hatenablog.com/>              |   11|
+| <http://www.yasuhisay.info/>                    |   11|
+| <http://cordea.hatenadiary.com/>                |   10|
+| <http://ito-hi.blog.so-net.ne.jp/>              |   10|
+| <http://marugari2.hatenablog.jp/>               |   10|
+| <https://fisproject.jp/>                        |   10|
+| <http://blogs2.datall-analyse.nl/>              |    9|
+| <http://estrellita.hatenablog.com/>             |    9|
+| <http://rion778.hatenablog.com/>                |    9|
+| <http://smrmkt.hatenablog.jp/>                  |    9|
+| <http://uncorrelated.hatenablog.com/>           |    9|
+| <https://ashibata.com/>                         |    9|
+| <http://blog.hoxo-m.com/>                       |    8|
+| <http://opisthokonta.net/>                      |    8|
+| <https://martynplummer.wordpress.com/>          |    8|
+| <http://appliedpredictivemodeling.com/>         |    7|
+| <http://kkimura.hatenablog.com/>                |    7|
+| <http://nekopuni.holy.jp/>                      |    7|
+| <http://skozawa.hatenablog.com/>                |    7|
+| <http://www.magesblog.com/>                     |    7|
+| <https://darrenjw.wordpress.com/>               |    7|
+| <https://mosko.tokyo/>                          |    7|
+| <http://blog-jp.treasuredata.com/>              |    6|
+| <http://syclik.com/>                            |    6|
+| <http://threeprogramming.lolipop.jp/>           |    6|
+| <https://wiseodd.github.io/>                    |    6|
+| <http://bicycle1885.hatenablog.com/>            |    5|
+| <http://nhkuma.blogspot.jp/>                    |    5|
+| <http://takeshid.hatenadiary.jp/>               |    5|
+| <http://www.unofficialgoogledatascience.com/>   |    5|
+| <http://austinrochford.com/>                    |    4|
+| <http://blog.gepuro.net/>                       |    4|
+| <http://y-uti.hatenablog.jp/>                   |    4|
+| <https://blog.albert2005.co.jp/>                |    4|
+| <http://aaaazzzz036.hatenablog.com/>            |    3|
+| <http://aial.shiroyagi.co.jp/>                  |    3|
+| <http://keiku.hatenablog.jp/>                   |    3|
+| <http://ktrmnm.github.io/>                      |    3|
+| <http://laughing.hatenablog.com/>               |    3|
+| <http://leeswijzer.hatenablog.com/>             |    3|
+| <http://oscillograph.hateblo.jp/>               |    3|
+| <http://pingpongpangpong.blogspot.jp/>          |    3|
+| <http://shinaisan.hatenablog.com/>              |    3|
+| <http://sinhrks.hatenablog.com/>                |    3|
+| <http://takehiko-i-hayashi.hatenablog.com/>     |    3|
+| <http://tatabox.hatenablog.com/>                |    3|
+| <https://blog.recyclebin.jp/>                   |    3|
+| <https://shapeofdata.wordpress.com/>            |    3|
+| <http://blog.kz-md.net/>                        |    2|
+| <http://blog.shakirm.com/>                      |    2|
+| <http://ibisforest.blog4.fc2.com/>              |    2|
+| <http://kazoo04.hatenablog.com/>                |    2|
+| <http://machine-learning.hatenablog.com/>       |    2|
+| <http://mockquant.blogspot.jp/>                 |    2|
+| <http://nakhirot.hatenablog.com/>               |    2|
+| <http://ouzor.github.io/>                       |    2|
+| <http://triadsou.hatenablog.com/>               |    2|
+| <http://wafdata.hatenablog.com/>                |    2|
+| <http://yamano357.hatenadiary.com/>             |    2|
+| <https://elix-tech.github.io/>                  |    2|
+| <https://github.com/>                           |    2|
+| <https://paintschainer.preferred.tech/>         |    2|
 
-### Check if the URLs are valid
+特別対応が必要そうなのは、
 
-``` r
-d %>%
-  mutate(base_url = stringr::str_extract(real_url, "^https?://[^/]+/?")) %>%
-  group_by(blog_title) %>%
-  summarise(urls = list(unique(base_url))) %>%
-  filter(purrr::map_int(urls, length) > 1) %>% 
-  knitr::kable()
-```
+-   <http://d.hatena.ne.jp/>
+-   <https://qiita.com/>
+-   <http://rpubs.com/>
 
-| blog\_title                                    | urls                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CORDEA blog                                    | <http://cordea.hatenadiary.com/>, <http://shibuya-apk.connpass.com>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Cortana Intelligence and Machine Learning Blog | <https://blogs.technet.microsoft.com/>, <https://github.com/>, <https://azure.microsoft.com/>, <http://aka.ms/>, <http://irafm.osu.cz/>, <https://www.washingtonpost.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Doing Bayesian Data Analysis                   | <http://doingbayesiandataanalysis.blogspot.com/>, <https://osf.io/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| FastML                                         | <http://fastml.com/>, <https://github.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| FiS Project                                    | <https://fisproject.jp/>, <https://www.fisproject.jp/>, <http://www.fisproject.jp/>, <http://github.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| From Pure Math to Applied Math                 | <http://mathetake.hatenablog.com/>, <http://mathetake.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Google Research Blog                           | <http://research.googleblog.com/>, <http://www.annfammed.org/>, <http://github.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| GushiSnowの投稿 - Qiita                        | <https://qiita.com/>, <https://arxiv.org/>, <http://qiita.com/>, <https://keras.io/>, <http://www.wings.msn.to/>, <https://github.com/>, <http://www.yamamanx.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| hamadakoichi blog                              | <http://d.hatena.ne.jp/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Healthy Algorithms                             | <https://gist.github.com/>, <https://healthyalgorithms.com/>, <http://www.sciencedirect.com/>, <https://drive.google.com/>, <https://www.youtube.com/>, <http://faculty.washington.edu/>, <http://www.geovista.psu.edu/>, <http://jamanetwork.com/>, <https://sinews.siam.org/>, <https://github.com/>, <https://www.cdc.gov/>, <http://textminingonline.com/>, <http://nlp.stanford.edu/>, <http://www.thelancet.com/>, <http://www.acm.org/>, <http://ivory.idyll.org/>, <https://www.nap.edu/>, <https://ifttt.com/>, <http://mxnet.io/>, <http://www.abett.com/>, <http://www.macaulay.ac.uk/>, <https://www.uni.edu/>, <http://www.geekwire.com/>, <http://r4ds.had.co.nz/>, <http://phastdata.org/>, <http://mybinder.org/>, <http://bit.ly/>, <http://rses.anu.edu.au/> |
-| hoxo\_mの投稿 - Qiita                          | <http://qiita.com/>, <https://www.slideshare.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| <https://t.co/BF5Qgic50O>                      | <http://mrunadon.github.io>, <https://mrunadon.github.io/>, <http://dx.doi.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| <https://t.co/BF5QgitFSm>                      | <http://mrunadon.github.io>, <https://mrunadon.github.io/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <https://t.co/FP2xff2GTa>                      | <http://musyoku.github.io>, <http://musyoku.github.io/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| <https://t.co/J9T28U2LuD>                      | <http://AustinRochford.com>, <http://austinrochford.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| <https://t.co/nu9gXyXz8Z>                      | <http://opisthokonta.net>, <http://opisthokonta.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| <https://t.co/nu9gXzfa0x>                      | <http://opisthokonta.net>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ill-identified dia                             | <http://bit.ly/>, <http://ill-identified.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ill-identified diary                           | <http://ill-identified.hatenablog.com/>, <http://en-ill-identified.blogspot.jp>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| INPUTしたらOUTPUT!                             | <http://estrellita.hatenablog.com/>, <http://bit.ly/>, <http://estrellita.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| JAGS News                                      | <https://martynplummer.wordpress.com/>, <http://iaa.mi.oa-brera.inaf.it/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| kenmatsu4の投稿 - Qiita                        | <http://qiita.com/>, <http://www.ae.keio.ac.jp/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| kivantium活動日記                              | <http://kivantium.hateblo.jp/>, <http://www-bcf.usc.edu/>, <http://kivantium.hateblo.jp>, <http://teaching.idallen.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Knowledge As Practice                          | <http://hikaru1122.hatenadiary.jp/>, <https://www.rstudio.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| kohskeの投稿 - Qiita                           | <http://qiita.com/>, <https://sites.google.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| laughingのブログ                               | <http://laughing.hatenablog.com/>, <http://gist.github.com>, <http://faculty.psy.ohio-state.edu/>, <http://www.orangepi.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Logics of Blue                                 | <http://logics-of-blue.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| mages' blog                                    | <http://www.magesblog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| miyamotok0105の投稿 - Qiita                    | <http://qiita.com/>, <https://ifttt.com/>, <https://gym.openai.com/>, <http://julian.togelius.com/>, <https://pjreddie.com/>, <https://arxiv.org/>, <https://keras.io/>, <http://webkaru.net/>, <http://www.sciencedirect.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Momentum                                       | <http://nekopuni.holy.jp/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| My Life as a Mock                              | <http://bit.ly/>, <http://datascienceplus.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| My Life as a Mock Quant                        | <http://d.hatena.ne.jp/>, <http://scikit-learn.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Negative/Positive Thinking                     | <http://d.hatena.ne.jp/>, <http://blog.faroo.com/>, <https://www.youtube.com/>, <https://www.cs.jhu.edu/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| No Free Hunch                                  | <http://blog.kaggle.com/>, <http://www.context-lab.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Obey Your MATHEMATICS.                         | <http://mathetake.hatenablog.com/>, <https://ja.wikipedia.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Preferred Research                             | <https://research.preferred.jp/>, <https://www.preferred-networks.jp/>, <https://github.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Qiita tn1031                                   | <http://bit.ly/>, <https://arxiv.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Quasi-quant2010の投稿 - Qiita                  | <http://qiita.com/>, <http://sessan.hatenablog.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| r-statistics-fanの日記                         | <http://r-statistics-fan.hatenablog.com/>, <https://ifttt.com/>, <https://pokemongo-get.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| R <U+2013> Colorless Green Ideas               | <http://id.fnshr.info/>, <http://blogs.sas.com/>, <http://r4ds.had.co.nz/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| random dispersal                               | <http://nhkuma.blogspot.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Revolutions                                    | <http://blog.revolutionanalytics.com/>, <http://microsoft.github.io/>, <http://FiveThirtyEight.com>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| RStudio Blog                                   | <https://blog.rstudio.com/>, <http://community.rstudio.com>, <https://blog.rstudio.org/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| StatsFragments                                 | <http://sinhrks.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| syclik                                         | <http://www.syclik.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| tata色々な備忘録                               | <http://tatabox.hatenablog.com/>, <https://developer.nvidia.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Technically, techn                             | <http://bit.ly/>, <http://blog.gachapin-sensei.com>, <http://www.mozilla.org>, <http://www.google.co.jp>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Technically, technophobic.                     | <http://notchained.hatenablog.com/>, <http://Wordpress.com/>, <http://blockchain.info>, <https://yutannihilation.github.io/>, <http://notchained.hatenablog.com>, <https://gyazo.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| teqニカルブログ                                | <http://soqdoq.com/>, <https://gitter.im/>, <https://stackoverflow.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| The Spectator                                  | <http://blog.shakirm.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| The Unofficial Google Data Science Blog        | <http://www.unofficialgoogledatascience.com/>, <https://research.fb.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| threecourse's memo                             | <http://threeprogramming.lolipop.jp/>, <https://deepanalytics.jp/>, <https://gist.github.com/>, <http://www.slideshare.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| tkm2261's blog                                 | <http://yutori-datascience.hatenablog.com/>, <https://www.kaggle.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| TomokIshiiの投稿 - Qiita                       | <http://qiita.com/>, <https://stats.stackexchange.com/>, <http://www.statsmodels.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| uriの投稿 - Qiita                              | <http://qiita.com/>, <http://uribo.hatenablog.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Variance Explained                             | <http://varianceexplained.org/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| white page                                     | <http://bit.ly/>, <https://stat.ethz.ch/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| xiangze's sparse blog                          | <http://xiangze.hatenablog.com/>, <http://edwardlib.org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| xiangzeのブログ                                | <http://bit.ly/>, <https://gist.github.com/>, <http://statmodeling.hatenablog.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| アナリティクス <U+2013> ALBERT Official Blog   | <https://blog.albert2005.co.jp/>, <http://blog.albert2005.co.jp/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| お勉強メモ                                     | <http://marugari2.hatenablog.jp/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| かものはしの分析ブログ                         | <http://kamonohashiperry.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| たけし備忘録                                   | <http://takeshid.hatenadiary.jp/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| データサイエンティスト(仮)                     | <http://tekenuko.hatenablog.com/>, <http://tfug-tokyo.connpass.com>, <http://tekenuko.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| データ分析の会社で働く人の四方山話             | <http://rindai87.hatenablog.jp/>, <http://tfug-tokyo.connpass.com>, <http://event.shoeisha.jp>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| にほんごのれんしゅう                           | <http://catindog.hatenablog.com/>, <http://q.hatena.ne.jp/>, <http://v3.eir-parts.net/>, <http://d.hatena.ne.jp/>, <https://github.com/>, <http://studylog.hateblo.jp/>, <http://qiita.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| のんびりしているエンジニアの日記               | <http://nonbiri-tereka.hatenablog.com/>, <https://ifttt.com/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ほくそ笑む                                     | <http://d.hatena.ne.jp/>, <https://github.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| まだ厨二病                                     | <http://uribo.hatenablog.com/>, <http://uribo.hatenablog.com>, <http://www.reddit.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| もうカツ丼はいいよな                           | <http://rion778.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| やっていく                                     | <http://ktrmnm.github.io/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| りんごがでている                               | <http://bicycle1885.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 捨てられたブログ                               | <https://blog.recyclebin.jp/>, <http://blog.recyclebin.jp/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 小人さんの妄想                                 | <http://d.hatena.ne.jp/>, <https://paintschainer.preferred.tech/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| 人工知能に関する断創録                         | <http://aidiary.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 廿TT                                           | <http://abrahamcow.hatenablog.com/>, <https://arxiv.org/>, <http://ebsa.ism.ac.jp/>, <https://ifttt.com/>, <http://zisatsu.web.fc2.com/>, <http://daweb.ism.ac.jp/>, <http://abrahamcow.hatenablog.com>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 日々是独想                                     | <https://kazutan.github.io/>, <https://www.rstudio.com/>, <http://Wordpress.com>, <http://blog.kz-md.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 歩いたら休め                                   | <http://kiito.hatenablog.com/>, <http://solr.doorkeeper.jp>, <http://kiito.hatenablog.com>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 北の大地から                                   | <http://kkimura.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 盆栽日記                                       | <http://d.hatena.ne.jp/>, <https://stackoverflow.com/>, <http://stamefusa.hateblo.jp/>, <http://uribo.hatenablog.com/>, <http://bit.ly/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 唯物是真 Scaled\_Wurm                          | <http://sucrose.hatenablog.com/>, <http://bit.ly/>, <http://qiita.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 緑茶思考ブログ                                 | <http://yusuke-ujitoko.hatenablog.com/>, <https://arxiv.org/>, <http://www.cv-foundation.org/>, <http://cs231n.stanford.edu/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| NA                                             | <http://bit.ly/>, <http://tekenuko.hatenablog.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-
-考察:
-
--   ツイート内にURLが複数登場することはたしかにあるので、URLが複数ひっかかること自体はおかしくないはず。
--   しかし、たしかにURLがあってるのかよくわからない投稿がある: <https://twitter.com/datasci_blogs/status/829964157386637313>
--   QiitaのRSSはユーザごとに違うので個別対処が必要そう
+くらい。github.comになってるやつは明らかにミスってるけど、まあ2件だけなので無視。
