@@ -1,0 +1,217 @@
+website,rel,type,title,href,id
+http://blog.revolutionanalytics.com/,alternate,application/atom+xml,Posts on 'Revolutions' (Atom),http://blog.revolutionanalytics.com/atom.xml,NA
+http://blog.revolutionanalytics.com/,alternate,application/rss+xml,Posts on 'Revolutions' (RSS 1.0),http://blog.revolutionanalytics.com/index.rdf,NA
+http://blog.revolutionanalytics.com/,alternate,application/rss+xml,Posts on 'Revolutions' (RSS 2.0),http://blog.revolutionanalytics.com/rss.xml,NA
+https://research.googleblog.com/,alternate,application/atom+xml,Research Blog - Atom,https://research.googleblog.com/feeds/posts/default,NA
+https://research.googleblog.com/,alternate,application/rss+xml,Research Blog - RSS,https://research.googleblog.com/feeds/posts/default?alt=rss,NA
+https://waterprogramming.wordpress.com/,alternate,application/rss+xml,Water Programming: A Collaborative Research Blog » Feed,https://waterprogramming.wordpress.com/feed/,NA
+https://waterprogramming.wordpress.com/,alternate,application/rss+xml,Water Programming: A Collaborative Research Blog » Comments Feed,https://waterprogramming.wordpress.com/comments/feed/,NA
+http://doingbayesiandataanalysis.blogspot.jp/,alternate,application/atom+xml,Doing Bayesian Data Analysis - Atom,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default,NA
+http://doingbayesiandataanalysis.blogspot.jp/,alternate,application/rss+xml,Doing Bayesian Data Analysis - RSS,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default?alt=rss,NA
+http://blog.kaggle.com/,alternate,application/rss+xml,No Free Hunch » Feed,http://blog.kaggle.com/feed/,NA
+http://blog.kaggle.com/,alternate,application/rss+xml,No Free Hunch » Comments Feed,http://blog.kaggle.com/comments/feed/,NA
+http://fastml.com/,alternate,application/atom+xml,FastML,/atom.xml,NA
+http://syclik.com/,alternate,application/rss+xml,RSS,/atom.xml,NA
+https://xianblog.wordpress.com/,alternate,application/rss+xml,Xi'an's Og » Feed,https://xianblog.wordpress.com/feed/,NA
+https://xianblog.wordpress.com/,alternate,application/rss+xml,Xi'an's Og » Comments Feed,https://xianblog.wordpress.com/comments/feed/,NA
+http://notchained.hatenablog.com/,alternate,application/atom+xml,Atom,http://notchained.hatenablog.com/feed,NA
+http://notchained.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://notchained.hatenablog.com/rss,NA
+http://varianceexplained.org/,alternate,application/atom+xml,Variance Explained Feed,http://varianceexplained.org/feed.xml,NA
+http://abrahamcow.hatenablog.com/,alternate,application/atom+xml,Atom,http://abrahamcow.hatenablog.com/feed,NA
+http://abrahamcow.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://abrahamcow.hatenablog.com/rss,NA
+http://ibisforest.blog4.fc2.com/,alternate,application/rss+xml,RSS,http://ibisforest.blog4.fc2.com/?xml,NA
+http://www.yasuhisay.info/,alternate,application/atom+xml,Atom,http://www.yasuhisay.info/feed,NA
+http://www.yasuhisay.info/,alternate,application/rss+xml,RSS2.0,http://www.yasuhisay.info/rss,NA
+https://fisproject.jp/,alternate,application/rss+xml,FiS Project » フィード,https://fisproject.jp/feed/,NA
+https://fisproject.jp/,alternate,application/rss+xml,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/,NA
+https://www.karada-good.net/,alternate,application/rss+xml,からだにいいもの RSS Feed,https://www.karada-good.net/feed,NA
+http://kivantium.hateblo.jp/,alternate,application/atom+xml,Atom,http://kivantium.hateblo.jp/feed,NA
+http://kivantium.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://kivantium.hateblo.jp/rss,NA
+http://catindog.hatenablog.com/,alternate,application/atom+xml,Atom,http://catindog.hatenablog.com/feed,NA
+http://catindog.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://catindog.hatenablog.com/rss,NA
+http://kamonohashiperry.com/,alternate,application/rss+xml,かものはしの分析ブログ » フィード,http://kamonohashiperry.com/feed,NA
+http://kamonohashiperry.com/,alternate,application/rss+xml,かものはしの分析ブログ » コメントフィード,http://kamonohashiperry.com/comments/feed,NA
+http://kamonohashiperry.com/,alternate,application/json+oembed,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F,NA
+http://kamonohashiperry.com/,alternate,text/xml+oembed,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F&format=xml,NA
+http://nonbiri-tereka.hatenablog.com/,alternate,application/atom+xml,Atom,http://nonbiri-tereka.hatenablog.com/feed,NA
+http://nonbiri-tereka.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://nonbiri-tereka.hatenablog.com/rss,NA
+http://uribo.hatenablog.com/,alternate,application/atom+xml,Atom,http://uribo.hatenablog.com/feed,NA
+http://uribo.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://uribo.hatenablog.com/rss,NA
+http://tekenuko.hatenablog.com/,alternate,application/atom+xml,Atom,http://tekenuko.hatenablog.com/feed,NA
+http://tekenuko.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tekenuko.hatenablog.com/rss,NA
+https://ashibata.com/,alternate,application/rss+xml,Data » フィード,https://ashibata.com/feed/,NA
+https://ashibata.com/,alternate,application/rss+xml,Data » コメントフィード,https://ashibata.com/comments/feed/,NA
+http://yutori-datascience.hatenablog.com/,alternate,application/atom+xml,Atom,http://yutori-datascience.hatenablog.com/feed,NA
+http://yutori-datascience.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yutori-datascience.hatenablog.com/rss,NA
+http://sucrose.hatenablog.com/,alternate,application/atom+xml,Atom,http://sucrose.hatenablog.com/feed,NA
+http://sucrose.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sucrose.hatenablog.com/rss,NA
+http://hikaru1122.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://hikaru1122.hatenadiary.jp/feed,NA
+http://hikaru1122.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://hikaru1122.hatenadiary.jp/rss,NA
+http://smrmkt.hatenablog.jp/,alternate,application/atom+xml,Atom,http://smrmkt.hatenablog.jp/feed,NA
+http://smrmkt.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://smrmkt.hatenablog.jp/rss,NA
+http://kiito.hatenablog.com/,alternate,application/atom+xml,Atom,http://kiito.hatenablog.com/feed,NA
+http://kiito.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kiito.hatenablog.com/rss,NA
+http://yusuke-ujitoko.hatenablog.com/,alternate,application/atom+xml,Atom,http://yusuke-ujitoko.hatenablog.com/feed,NA
+http://yusuke-ujitoko.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yusuke-ujitoko.hatenablog.com/rss,NA
+http://yamano357.hatenadiary.com/,alternate,application/atom+xml,Atom,http://yamano357.hatenadiary.com/feed,NA
+http://yamano357.hatenadiary.com/,alternate,application/rss+xml,RSS2.0,http://yamano357.hatenadiary.com/rss,NA
+http://id.fnshr.info/,alternate,application/rss+xml,Colorless Green Ideas » フィード,http://id.fnshr.info/feed/,NA
+http://id.fnshr.info/,alternate,application/rss+xml,Colorless Green Ideas » コメントフィード,http://id.fnshr.info/comments/feed/,NA
+http://www.unofficialgoogledatascience.com/,alternate,application/atom+xml,The Unofficial Google Data Science Blog - Atom,http://www.unofficialgoogledatascience.com/feeds/posts/default,NA
+http://www.unofficialgoogledatascience.com/,alternate,application/rss+xml,The Unofficial Google Data Science Blog - RSS,http://www.unofficialgoogledatascience.com/feeds/posts/default?alt=rss,NA
+http://skozawa.hatenablog.com/,alternate,application/atom+xml,Atom,http://skozawa.hatenablog.com/feed,NA
+http://skozawa.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://skozawa.hatenablog.com/rss,NA
+http://kkimura.hatenablog.com/,alternate,application/atom+xml,Atom,http://kkimura.hatenablog.com/feed,NA
+http://kkimura.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kkimura.hatenablog.com/rss,NA
+http://kosugitti.net/,alternate,application/rss+xml,Kosugitti Labo ver.9 » フィード,http://kosugitti.net/feed,NA
+http://kosugitti.net/,alternate,application/rss+xml,Kosugitti Labo ver.9 » コメントフィード,http://kosugitti.net/comments/feed,NA
+http://kosugitti.net/,alternate,application/json+oembed,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F,NA
+http://kosugitti.net/,alternate,text/xml+oembed,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F&format=xml,NA
+http://estrellita.hatenablog.com/,alternate,application/atom+xml,Atom,http://estrellita.hatenablog.com/feed,NA
+http://estrellita.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://estrellita.hatenablog.com/rss,NA
+http://takehiko-i-hayashi.hatenablog.com/,alternate,application/atom+xml,Atom,http://takehiko-i-hayashi.hatenablog.com/feed,NA
+http://takehiko-i-hayashi.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://takehiko-i-hayashi.hatenablog.com/rss,NA
+http://ill-identified.hatenablog.com/,alternate,application/atom+xml,Atom,http://ill-identified.hatenablog.com/feed,NA
+http://ill-identified.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://ill-identified.hatenablog.com/rss,NA
+http://mathetake.hatenablog.com/,alternate,application/atom+xml,Atom,http://mathetake.hatenablog.com/feed,NA
+http://mathetake.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://mathetake.hatenablog.com/rss,NA
+http://r-statistics-fan.hatenablog.com/,alternate,application/atom+xml,Atom,http://r-statistics-fan.hatenablog.com/feed,NA
+http://r-statistics-fan.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://r-statistics-fan.hatenablog.com/rss,NA
+http://shinaisan.hatenablog.com/,alternate,application/atom+xml,Atom,http://shinaisan.hatenablog.com/feed,NA
+http://shinaisan.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://shinaisan.hatenablog.com/rss,NA
+http://norimune.net/,alternate,application/rss+xml,Sunny side up! » フィード,http://norimune.net/feed,NA
+http://norimune.net/,alternate,application/rss+xml,Sunny side up! » コメントフィード,http://norimune.net/comments/feed,NA
+http://norimune.net/,alternate,application/json+oembed,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F,NA
+http://norimune.net/,alternate,text/xml+oembed,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F&format=xml,NA
+https://statr.me/,alternate,application/rss+xml,RSS,https://statr.me/index.xml,NA
+http://yamaguchiyuto.hatenablog.com/,alternate,application/atom+xml,Atom,http://yamaguchiyuto.hatenablog.com/feed,NA
+http://yamaguchiyuto.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yamaguchiyuto.hatenablog.com/rss,NA
+http://uncorrelated.hatenablog.com/,alternate,application/atom+xml,Atom,http://uncorrelated.hatenablog.com/feed,NA
+http://uncorrelated.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://uncorrelated.hatenablog.com/rss,NA
+https://blog.albert2005.co.jp/,alternate,application/rss+xml,ALBERT Official Blog » フィード,https://blog.albert2005.co.jp/feed/,NA
+https://blog.albert2005.co.jp/,alternate,application/rss+xml,ALBERT Official Blog » コメントフィード,https://blog.albert2005.co.jp/comments/feed/,NA
+https://logics-of-blue.com/,alternate,application/rss+xml,Logics of Blue » フィード,https://logics-of-blue.com/feed/,NA
+https://logics-of-blue.com/,alternate,application/rss+xml,Logics of Blue » コメントフィード,https://logics-of-blue.com/comments/feed/,NA
+https://logics-of-blue.com/,alternate,application/json+oembed,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F,NA
+https://logics-of-blue.com/,alternate,text/xml+oembed,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F&format=xml,NA
+http://statmodeling.hatenablog.com/,alternate,application/atom+xml,Atom,http://statmodeling.hatenablog.com/feed,NA
+http://statmodeling.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://statmodeling.hatenablog.com/rss,NA
+https://martynplummer.wordpress.com/,alternate,application/rss+xml,JAGS News » Feed,https://martynplummer.wordpress.com/feed/,NA
+https://martynplummer.wordpress.com/,alternate,application/rss+xml,JAGS News » Comments Feed,https://martynplummer.wordpress.com/comments/feed/,NA
+http://blog.hoxo-m.com/,alternate,application/rss+xml,株式会社ホクソエムのブログ,http://blog.hoxo-m.com/index.xml,NA
+http://tatabox.hatenablog.com/,alternate,application/atom+xml,Atom,http://tatabox.hatenablog.com/feed,NA
+http://tatabox.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tatabox.hatenablog.com/rss,NA
+http://keiku.hatenablog.jp/,alternate,application/atom+xml,Atom,http://keiku.hatenablog.jp/feed,NA
+http://keiku.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://keiku.hatenablog.jp/rss,NA
+http://musyoku.github.io/,alternate,application/rss+xml,ご注文は機械学習ですか？ - https://twitter.com/musyokudon,/feed.xml,NA
+http://nonki1974.hateblo.jp/,alternate,application/atom+xml,Atom,http://nonki1974.hateblo.jp/feed,NA
+http://nonki1974.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://nonki1974.hateblo.jp/rss,NA
+http://aidiary.hatenablog.com/,alternate,application/atom+xml,Atom,http://aidiary.hatenablog.com/feed,NA
+http://aidiary.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://aidiary.hatenablog.com/rss,NA
+http://cordea.hatenadiary.com/,alternate,application/atom+xml,Atom,http://cordea.hatenadiary.com/feed,NA
+http://cordea.hatenadiary.com/,alternate,application/rss+xml,RSS2.0,http://cordea.hatenadiary.com/rss,NA
+http://aaaazzzz036.hatenablog.com/,alternate,application/atom+xml,Atom,http://aaaazzzz036.hatenablog.com/feed,NA
+http://aaaazzzz036.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://aaaazzzz036.hatenablog.com/rss,NA
+https://mrunadon.github.io/,alternate,application/rss+xml,MrUnadon - Bayesian Statistical Modelings with R and Rstan,/feed.xml,NA
+https://darrenjw.wordpress.com/,alternate,application/rss+xml,Darren Wilkinson's research blog » Feed,https://darrenjw.wordpress.com/feed/,NA
+https://darrenjw.wordpress.com/,alternate,application/rss+xml,Darren Wilkinson's research blog » Comments Feed,https://darrenjw.wordpress.com/comments/feed/,NA
+http://wakuteka.hatenablog.jp/,alternate,application/atom+xml,Atom,http://wakuteka.hatenablog.jp/feed,NA
+http://wakuteka.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://wakuteka.hatenablog.jp/rss,NA
+http://marugari2.hatenablog.jp/,alternate,application/atom+xml,Atom,http://marugari2.hatenablog.jp/feed,NA
+http://marugari2.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://marugari2.hatenablog.jp/rss,NA
+http://handasse.blogspot.jp/,alternate,application/atom+xml,良いもの。悪いもの。 - Atom,http://handasse.blogspot.com/feeds/posts/default,NA
+http://handasse.blogspot.jp/,alternate,application/rss+xml,良いもの。悪いもの。 - RSS,http://handasse.blogspot.com/feeds/posts/default?alt=rss,NA
+http://triadsou.hatenablog.com/,alternate,application/atom+xml,Atom,http://triadsou.hatenablog.com/feed,NA
+http://triadsou.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://triadsou.hatenablog.com/rss,NA
+http://blogs2.datall-analyse.nl/,alternate,application/rss+xml,"R code, simulations, and modeling » Feed",http://blogs2.datall-analyse.nl/feed/,NA
+http://blogs2.datall-analyse.nl/,alternate,application/rss+xml,"R code, simulations, and modeling » Comments Feed",http://blogs2.datall-analyse.nl/comments/feed/,NA
+https://www.fisproject.jp/,alternate,application/rss+xml,FiS Project » フィード,https://fisproject.jp/feed/,NA
+https://www.fisproject.jp/,alternate,application/rss+xml,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/,NA
+http://xiangze.hatenablog.com/,alternate,application/atom+xml,Atom,http://xiangze.hatenablog.com/feed,NA
+http://xiangze.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://xiangze.hatenablog.com/rss,NA
+http://www.magesblog.com/,alternate,application/rss+xml,mages' blog,https://magesblog.com/index.xml,NA
+https://research.preferred.jp/,alternate,application/rss+xml,Preferred Research Blog,https://research.preferred.jp/feed/,NA
+http://sora-sakaki.hatenablog.com/,alternate,application/atom+xml,Atom,http://sora-sakaki.hatenablog.com/feed,NA
+http://sora-sakaki.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sora-sakaki.hatenablog.com/rss,NA
+https://blog.exploratory.io/,alternate,application/rss+xml,RSS,https://blog.exploratory.io/feed,feedLink
+https://blog.exploratory.io/,alternate,NA,NA,android-app://com.medium.reader/https/medium.com/learn-dplyr,NA
+http://rindai87.hatenablog.jp/,alternate,application/atom+xml,Atom,http://rindai87.hatenablog.jp/feed,NA
+http://rindai87.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://rindai87.hatenablog.jp/rss,NA
+http://nekopuni.holy.jp/,alternate,application/rss+xml,Momentum » Feed,http://nekopuni.holy.jp/feed/,NA
+http://nekopuni.holy.jp/,alternate,application/rss+xml,Momentum » Comments Feed,http://nekopuni.holy.jp/comments/feed/,NA
+http://tjo.hatenablog.com/,alternate,application/atom+xml,Atom,http://tjo.hatenablog.com/feed,NA
+http://tjo.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tjo.hatenablog.com/rss,NA
+http://nhkuma.blogspot.jp/,alternate,application/atom+xml,random dispersal - Atom,http://nhkuma.blogspot.com/feeds/posts/default,NA
+http://nhkuma.blogspot.jp/,alternate,application/rss+xml,random dispersal - RSS,http://nhkuma.blogspot.com/feeds/posts/default?alt=rss,NA
+http://takeshid.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://takeshid.hatenadiary.jp/feed,NA
+http://takeshid.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://takeshid.hatenadiary.jp/rss,NA
+http://postd.cc/,alternate,application/rss+xml,RSS,http://postd.cc/feed/,NA
+http://leeswijzer.hatenablog.com/,alternate,application/atom+xml,Atom,http://leeswijzer.hatenablog.com/feed,NA
+http://leeswijzer.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://leeswijzer.hatenablog.com/rss,NA
+https://healthyalgorithms.com/,alternate,application/rss+xml,Healthy Algorithms » Feed,https://healthyalgorithms.com/feed/,NA
+https://healthyalgorithms.com/,alternate,application/rss+xml,Healthy Algorithms » Comments Feed,https://healthyalgorithms.com/comments/feed/,NA
+http://blog.shakirm.com/,alternate,application/rss+xml,The Spectator » Feed,http://blog.shakirm.com/feed/,NA
+http://blog.shakirm.com/,alternate,application/rss+xml,The Spectator » Comments Feed,http://blog.shakirm.com/comments/feed/,NA
+http://oscillograph.hateblo.jp/,alternate,application/atom+xml,Atom,http://oscillograph.hateblo.jp/feed,NA
+http://oscillograph.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://oscillograph.hateblo.jp/rss,NA
+http://wafdata.hatenablog.com/,alternate,application/atom+xml,Atom,http://wafdata.hatenablog.com/feed,NA
+http://wafdata.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://wafdata.hatenablog.com/rss,NA
+http://wildpie.hatenablog.com/,alternate,application/atom+xml,Atom,http://wildpie.hatenablog.com/feed,NA
+http://wildpie.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://wildpie.hatenablog.com/rss,NA
+http://laughing.hatenablog.com/,alternate,application/atom+xml,Atom,http://laughing.hatenablog.com/feed,NA
+http://laughing.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://laughing.hatenablog.com/rss,NA
+http://machine-learning.hatenablog.com/,alternate,application/atom+xml,Atom,http://machine-learning.hatenablog.com/feed,NA
+http://machine-learning.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://machine-learning.hatenablog.com/rss,NA
+http://hi-king.hatenablog.com/,alternate,application/atom+xml,Atom,http://hi-king.hatenablog.com/feed,NA
+http://hi-king.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://hi-king.hatenablog.com/rss,NA
+http://www.computervisionblog.com/,alternate,application/atom+xml,Tombone's Computer Vision Blog - Atom,http://www.computervisionblog.com/feeds/posts/default,NA
+http://www.computervisionblog.com/,alternate,application/rss+xml,Tombone's Computer Vision Blog - RSS,http://www.computervisionblog.com/feeds/posts/default?alt=rss,NA
+http://bicycle1885.hatenablog.com/,alternate,application/atom+xml,Atom,http://bicycle1885.hatenablog.com/feed,NA
+http://bicycle1885.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://bicycle1885.hatenablog.com/rss,NA
+https://blog.recyclebin.jp/,alternate,application/rss+xml,捨てられたブログ » フィード,https://blog.recyclebin.jp/feed,NA
+https://blog.recyclebin.jp/,alternate,application/rss+xml,捨てられたブログ » コメントフィード,https://blog.recyclebin.jp/comments/feed,NA
+https://shapeofdata.wordpress.com/,alternate,application/rss+xml,The Shape of Data » Feed,https://shapeofdata.wordpress.com/feed/,NA
+https://shapeofdata.wordpress.com/,alternate,application/rss+xml,The Shape of Data » Comments Feed,https://shapeofdata.wordpress.com/comments/feed/,NA
+http://statchiraura.blog.fc2.com/,alternate,application/rss+xml,RSS,http://statchiraura.blog.fc2.com/?xml,NA
+http://soonraah.hatenablog.com/,alternate,application/atom+xml,Atom,http://soonraah.hatenablog.com/feed,NA
+http://soonraah.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://soonraah.hatenablog.com/rss,NA
+http://yukinoi.hatenablog.com/,alternate,application/atom+xml,Atom,http://yukinoi.hatenablog.com/feed,NA
+http://yukinoi.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yukinoi.hatenablog.com/rss,NA
+http://sinhrks.hatenablog.com/,alternate,application/atom+xml,Atom,http://sinhrks.hatenablog.com/feed,NA
+http://sinhrks.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sinhrks.hatenablog.com/rss,NA
+http://rion778.hatenablog.com/,alternate,application/atom+xml,Atom,http://rion778.hatenablog.com/feed,NA
+http://rion778.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://rion778.hatenablog.com/rss,NA
+http://ito-hi.blog.so-net.ne.jp/,alternate,application/rss+xml,RSS,http://ito-hi.blog.so-net.ne.jp/index.rdf,NA
+http://ito-hi.blog.so-net.ne.jp/,alternate,application/atom+xml,Atom,http://ito-hi.blog.so-net.ne.jp/atom.xml,NA
+http://andrewgelman.com/,alternate,application/rss+xml,"Statistical Modeling, Causal Inference, and Social Science » Feed",http://andrewgelman.com/feed/,NA
+http://andrewgelman.com/,alternate,application/rss+xml,"Statistical Modeling, Causal Inference, and Social Science » Comments Feed",http://andrewgelman.com/comments/feed/,NA
+http://ouzor.github.io/,alternate,application/rss+xml,Juuso Parkkinen - Juuso's personal web page,/feed.xml,NA
+http://blog-jp.treasuredata.com/,alternate,application/atom+xml,Atom,http://blog-jp.treasuredata.com/feed,NA
+http://blog-jp.treasuredata.com/,alternate,application/rss+xml,RSS2.0,http://blog-jp.treasuredata.com/rss,NA
+http://nakhirot.hatenablog.com/,alternate,application/atom+xml,Atom,http://nakhirot.hatenablog.com/feed,NA
+http://nakhirot.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://nakhirot.hatenablog.com/rss,NA
+http://pingpongpangpong.blogspot.jp/,alternate,application/atom+xml,white page - Atom,http://pingpongpangpong.blogspot.com/feeds/posts/default,NA
+http://pingpongpangpong.blogspot.jp/,alternate,application/rss+xml,white page - RSS,http://pingpongpangpong.blogspot.com/feeds/posts/default?alt=rss,NA
+http://highschoolstudent.hatenablog.com/,alternate,application/atom+xml,Atom,http://highschoolstudent.hatenablog.com/feed,NA
+http://highschoolstudent.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://highschoolstudent.hatenablog.com/rss,NA
+http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,RSS 2.0,http://aial.shiroyagi.co.jp/feed/,NA
+http://aial.shiroyagi.co.jp/,alternate,text/xml,RSS .92,http://aial.shiroyagi.co.jp/feed/rss/,NA
+http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,カメリオ開発者ブログ » フィード,http://aial.shiroyagi.co.jp/feed/,NA
+http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,カメリオ開発者ブログ » コメントフィード,http://aial.shiroyagi.co.jp/comments/feed/,NA
+http://kazoo04.hatenablog.com/,alternate,application/atom+xml,Atom,http://kazoo04.hatenablog.com/feed,NA
+http://kazoo04.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kazoo04.hatenablog.com/rss,NA
+http://karpathy.github.io/,alternate,application/atom+xml,Andrej Karpathy blog posts,/feed.xml,NA
+http://hiratake55.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://hiratake55.hatenadiary.jp/feed,NA
+http://hiratake55.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://hiratake55.hatenadiary.jp/rss,NA
+http://abicky.hatenablog.jp/,alternate,application/atom+xml,Atom,http://abicky.hatenablog.jp/feed,NA
+http://abicky.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://abicky.hatenablog.jp/rss,NA
+http://y-uti.hatenablog.jp/,alternate,application/atom+xml,Atom,http://y-uti.hatenablog.jp/feed,NA
+http://y-uti.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://y-uti.hatenablog.jp/rss,NA
+http://mockquant.blogspot.jp/,alternate,application/atom+xml,HOXO-M  - anonymous data analyst group in Japan -   - Atom,http://mockquant.blogspot.com/feeds/posts/default,NA
+http://mockquant.blogspot.jp/,alternate,application/rss+xml,HOXO-M  - anonymous data analyst group in Japan -   - RSS,http://mockquant.blogspot.com/feeds/posts/default?alt=rss,NA
+http://opisthokonta.net/,alternate,application/rss+xml,opisthokonta.net » Feed,http://opisthokonta.net/?feed=rss2,NA
+http://opisthokonta.net/,alternate,application/rss+xml,opisthokonta.net » Comments Feed,http://opisthokonta.net/?feed=comments-rss2,NA
+http://ill-identified.hatenablog.com,alternate,application/atom+xml,Atom,http://ill-identified.hatenablog.com/feed,NA
+http://ill-identified.hatenablog.com,alternate,application/rss+xml,RSS2.0,http://ill-identified.hatenablog.com/rss,NA
+http://estrellita.hatenablog.com,alternate,application/atom+xml,Atom,http://estrellita.hatenablog.com/feed,NA
+http://estrellita.hatenablog.com,alternate,application/rss+xml,RSS2.0,http://estrellita.hatenablog.com/rss,NA

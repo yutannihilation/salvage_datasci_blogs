@@ -134,3 +134,88 @@ urls_df %>%
 * http://rpubs.com/
 
 くらい。github.comになってるやつは明らかにミスってるけど、まあ2件だけなので無視。
+
+### そのままスクレイピングできるものはスクレイピング
+
+```{r scrape, cache=file.exists("rss.csv")}
+urls_scrape <- unique(urls_df$base_urls) %>%
+  discard(. %in% c("http://d.hatena.ne.jp/", "https://qiita.com", "http://rpubs.com"))
+
+library(rvest)
+
+get_feeds <- function(url) {
+  read_html(url) %>% 
+    html_nodes(xpath = "//head/*[@rel='alternate']") %>%
+    html_attrs() %>%
+    map_dfr(as.list)
+}
+
+l <- map(urls_scrape, safely(get_feeds))
+
+# エラーがあるかチェック
+purrr::keep(l, ~ !is.null(.$error))
+```
+
+```{r scrape2, cache=file.exists("rss.csv")}
+df_rss <- l %>%
+  set_names(urls_scrape) %>%
+  map_dfr("result", .id = "website")
+
+write_csv(df_rss, path = "rss.csv")
+```
+
+### d.hatena.ne.jp
+
+RSS 1.0と2.0があるけど片方でいいので2.0をとってくる。
+
+```{r hatena}
+library(stringr)
+
+rss_hatena <- urls_df %>%
+  filter(base_urls == "http://d.hatena.ne.jp/") %>%
+  mutate(user = str_extract(.$urls, "(?<=^http://d.hatena.ne.jp/)[^/]+")) %>%
+  transmute(
+    website = str_c("http://d.hatena.ne.jp/", user),
+    rel     = "alternate",
+    type    = "application/rss+xml",
+    title   = "RSS 2.0",
+    href    = str_c(website, "/rss2")
+  )
+```
+
+### Qiita
+
+```{r qiita}
+rss_qiita <- urls_df %>%
+  filter(base_urls == "https://qiita.com/") %>%
+  mutate(user = str_extract(.$urls, "(?<=^https://qiita.com/)[^/]+")) %>%
+  transmute(
+    website = str_c("https://qiita.com/", user),
+    rel     = "alternate",
+    type    = "application/atom+xml",
+    title   = "Atom Feed",
+    href    = str_c(website, "/feed")
+  )
+```
+
+### Rpubs
+
+RSSどこ...？
+
+## 結合
+
+```{r all-rss}
+rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita)
+
+write_csv(rss_all, "rss_all.csv")
+```
+
+```{r result}
+rss_all %>%
+  transmute(website,
+            title,
+            href = if_else(startsWith(href, "http"),
+                           href,
+                           str_c(website, str_sub(href, start = 2)))) %>%
+  knitr::kable(format = "markdown")
+```
