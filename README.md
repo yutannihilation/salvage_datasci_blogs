@@ -270,18 +270,9 @@ urls_df %>%
 
 ``` r
 urls_scrape <- unique(urls_df$base_urls) %>%
-  discard(. %in% c("http://d.hatena.ne.jp/", "https://qiita.com", "http://rpubs.com"))
+  discard(. %in% c("http://d.hatena.ne.jp/", "https://qiita.com/", "http://rpubs.com/"))
 
 library(rvest)
-#> Loading required package: xml2
-#> 
-#> Attaching package: 'rvest'
-#> The following object is masked from 'package:readr':
-#> 
-#>     guess_encoding
-#> The following object is masked from 'package:purrr':
-#> 
-#>     pluck
 
 get_feeds <- function(url) {
   read_html(url) %>% 
@@ -308,6 +299,38 @@ df_rss <- l %>%
   map_dfr("result", .id = "website")
 
 write_csv(df_rss, path = "rss.csv")
+```
+
+#### うまくとれていないもの
+
+個別対応が必要そう
+
+``` r
+urls_scrape %>%
+  discard(~ . %in% unique(df_rss$website))
+#>  [1] "https://blogs.technet.microsoft.com/" 
+#>  [2] "https://blog.rstudio.com/"            
+#>  [3] "http://appliedpredictivemodeling.com/"
+#>  [4] "http://soqdoq.com/"                   
+#>  [5] "http://www.buildingwidgets.com/"      
+#>  [6] "https://elix-tech.github.io/"         
+#>  [7] "https://wiseodd.github.io/"           
+#>  [8] "https://kazutan.github.io/"           
+#>  [9] "http://threeprogramming.lolipop.jp/"  
+#> [10] "https://mosko.tokyo/"                 
+#> [11] "http://blog.gepuro.net/"              
+#> [12] "http://dirk.eddelbuettel.com/"        
+#> [13] "https://gist.github.com/"             
+#> [14] "http://ktrmnm.github.io/"             
+#> [15] NA                                     
+#> [16] "http://blog.kz-md.net/"               
+#> [17] "https://suryu.me/"                    
+#> [18] "https://github.com/"                  
+#> [19] "http://www.macaulay.ac.uk/"           
+#> [20] "http://dustintran.com/"               
+#> [21] "http://austinrochford.com/"           
+#> [22] "https://community.rstudio.com/"       
+#> [23] "https://paintschainer.preferred.tech/"
 ```
 
 ### d.hatena.ne.jp
@@ -348,11 +371,36 @@ rss_qiita <- urls_df %>%
 
 RSSどこ...？
 
+### うまくとれていないもの
+
+わかったやつだけ。
+
+``` r
+rss_manual <- tribble(
+  ~website, ~href,
+  "https://blogs.technet.microsoft.com/machinelearning/", "https://blogs.technet.microsoft.com/machinelearning/feed/",
+  "https://blog.rstudio.com/", "https://blog.rstudio.com/index.xml",
+  "http://appliedpredictivemodeling.com/blog/", "http://appliedpredictivemodeling.com/blog?format=RSS",
+  "http://soqdoq.com/symposion/", "http://soqdoq.com/symposion/feed/",
+  "http://www.buildingwidgets.com/blog", "http://www.buildingwidgets.com/blog?format=RSS",
+  "https://elix-tech.github.io/", "https://elix-tech.github.io/feed.xml",
+  "https://wiseodd.github.io/", "https://wiseodd.github.io/feed.xml",
+  "http://threeprogramming.lolipop.jp/blog/", "http://threeprogramming.lolipop.jp/blog/?feed=rss2",
+  "https://mosko.tokyo/post/", "https://mosko.tokyo/index.xml",
+  "http://blog.gepuro.net/", "http://blog.gepuro.net/recent.atom",
+  "http://dirk.eddelbuettel.com/blog/", "http://dirk.eddelbuettel.com/blog/index.rss",
+  "http://blog.kz-md.net/", "http://blog.kz-md.net/?feed=rss2",
+  "https://suryu.me/blog/", "https://suryu.me/blog/index.xml",
+  "http://dustintran.com/blog/", "http://dustintran.com/blog/feed.xml",
+  "http://austinrochford.com/", "http://austinrochford.com/rss.xml"
+)
+```
+
 結合
 ----
 
 ``` r
-rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita) %>%
+rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita, rss_manual) %>%
   transmute(website,
             title,
             href = if_else(startsWith(href, "http"),
@@ -370,11 +418,11 @@ rss_all %>%
   knitr::kable(format = "markdown")
 ```
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="20%" />
-<col width="33%" />
-<col width="46%" />
+<col width="22%" />
+<col width="32%" />
+<col width="44%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -3633,6 +3681,81 @@ rss_all %>%
 <td align="left"><a href="https://qiita.com/tn1031" class="uri">https://qiita.com/tn1031</a></td>
 <td align="left">Atom Feed</td>
 <td align="left"><a href="https://qiita.com/tn1031/feed" class="uri">https://qiita.com/tn1031/feed</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://blogs.technet.microsoft.com/machinelearning/" class="uri">https://blogs.technet.microsoft.com/machinelearning/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://blogs.technet.microsoft.com/machinelearning/feed/" class="uri">https://blogs.technet.microsoft.com/machinelearning/feed/</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://blog.rstudio.com/" class="uri">https://blog.rstudio.com/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://blog.rstudio.com/index.xml" class="uri">https://blog.rstudio.com/index.xml</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="http://appliedpredictivemodeling.com/blog/" class="uri">http://appliedpredictivemodeling.com/blog/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://appliedpredictivemodeling.com/blog?format=RSS" class="uri">http://appliedpredictivemodeling.com/blog?format=RSS</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="http://soqdoq.com/symposion/" class="uri">http://soqdoq.com/symposion/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://soqdoq.com/symposion/feed/" class="uri">http://soqdoq.com/symposion/feed/</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="http://www.buildingwidgets.com/blog" class="uri">http://www.buildingwidgets.com/blog</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://www.buildingwidgets.com/blog?format=RSS" class="uri">http://www.buildingwidgets.com/blog?format=RSS</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://elix-tech.github.io/" class="uri">https://elix-tech.github.io/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://elix-tech.github.io/feed.xml" class="uri">https://elix-tech.github.io/feed.xml</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://wiseodd.github.io/" class="uri">https://wiseodd.github.io/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://wiseodd.github.io/feed.xml" class="uri">https://wiseodd.github.io/feed.xml</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="http://threeprogramming.lolipop.jp/blog/" class="uri">http://threeprogramming.lolipop.jp/blog/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://threeprogramming.lolipop.jp/blog/?feed=rss2" class="uri">http://threeprogramming.lolipop.jp/blog/?feed=rss2</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://mosko.tokyo/post/" class="uri">https://mosko.tokyo/post/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://mosko.tokyo/index.xml" class="uri">https://mosko.tokyo/index.xml</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="http://blog.gepuro.net/" class="uri">http://blog.gepuro.net/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://blog.gepuro.net/recent.atom" class="uri">http://blog.gepuro.net/recent.atom</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="http://dirk.eddelbuettel.com/blog/" class="uri">http://dirk.eddelbuettel.com/blog/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://dirk.eddelbuettel.com/blog/index.rss" class="uri">http://dirk.eddelbuettel.com/blog/index.rss</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="http://blog.kz-md.net/" class="uri">http://blog.kz-md.net/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://blog.kz-md.net/?feed=rss2" class="uri">http://blog.kz-md.net/?feed=rss2</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://suryu.me/blog/" class="uri">https://suryu.me/blog/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="https://suryu.me/blog/index.xml" class="uri">https://suryu.me/blog/index.xml</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="http://dustintran.com/blog/" class="uri">http://dustintran.com/blog/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://dustintran.com/blog/feed.xml" class="uri">http://dustintran.com/blog/feed.xml</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="http://austinrochford.com/" class="uri">http://austinrochford.com/</a></td>
+<td align="left">NA</td>
+<td align="left"><a href="http://austinrochford.com/rss.xml" class="uri">http://austinrochford.com/rss.xml</a></td>
 </tr>
 </tbody>
 </table>

@@ -139,7 +139,7 @@ urls_df %>%
 
 ```{r scrape, cache=file.exists("rss.csv")}
 urls_scrape <- unique(urls_df$base_urls) %>%
-  discard(. %in% c("http://d.hatena.ne.jp/", "https://qiita.com", "http://rpubs.com"))
+  discard(. %in% c("http://d.hatena.ne.jp/", "https://qiita.com/", "http://rpubs.com/"))
 
 library(rvest)
 
@@ -162,6 +162,15 @@ df_rss <- l %>%
   map_dfr("result", .id = "website")
 
 write_csv(df_rss, path = "rss.csv")
+```
+
+#### うまくとれていないもの
+
+個別対応が必要そう
+
+```{r miss}
+urls_scrape %>%
+  discard(~ . %in% unique(df_rss$website))
 ```
 
 ### d.hatena.ne.jp
@@ -202,10 +211,35 @@ rss_qiita <- urls_df %>%
 
 RSSどこ...？
 
+### うまくとれていないもの
+
+わかったやつだけ。
+
+```{r atatakami}
+rss_manual <- tribble(
+  ~website, ~href,
+  "https://blogs.technet.microsoft.com/machinelearning/", "https://blogs.technet.microsoft.com/machinelearning/feed/",
+  "https://blog.rstudio.com/", "https://blog.rstudio.com/index.xml",
+  "http://appliedpredictivemodeling.com/blog/", "http://appliedpredictivemodeling.com/blog?format=RSS",
+  "http://soqdoq.com/symposion/", "http://soqdoq.com/symposion/feed/",
+  "http://www.buildingwidgets.com/blog", "http://www.buildingwidgets.com/blog?format=RSS",
+  "https://elix-tech.github.io/", "https://elix-tech.github.io/feed.xml",
+  "https://wiseodd.github.io/", "https://wiseodd.github.io/feed.xml",
+  "http://threeprogramming.lolipop.jp/blog/", "http://threeprogramming.lolipop.jp/blog/?feed=rss2",
+  "https://mosko.tokyo/post/", "https://mosko.tokyo/index.xml",
+  "http://blog.gepuro.net/", "http://blog.gepuro.net/recent.atom",
+  "http://dirk.eddelbuettel.com/blog/", "http://dirk.eddelbuettel.com/blog/index.rss",
+  "http://blog.kz-md.net/", "http://blog.kz-md.net/?feed=rss2",
+  "https://suryu.me/blog/", "https://suryu.me/blog/index.xml",
+  "http://dustintran.com/blog/", "http://dustintran.com/blog/feed.xml",
+  "http://austinrochford.com/", "http://austinrochford.com/rss.xml"
+)
+```
+
 ## 結合
 
 ```{r all-rss}
-rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita) %>%
+rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita, rss_manual) %>%
   transmute(website,
             title,
             href = if_else(startsWith(href, "http"),
@@ -214,6 +248,7 @@ rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita) %>%
 
 write_csv(rss_all, "rss_all.csv")
 ```
+
 
 ## 結果
 
