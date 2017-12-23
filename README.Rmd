@@ -189,7 +189,8 @@ rss_hatena <- urls_df %>%
     type    = "application/rss+xml",
     title   = "RSS 2.0",
     href    = str_c(website, "/rss2")
-  )
+  ) %>%
+  distinct()
 ```
 
 ### Qiita
@@ -204,7 +205,8 @@ rss_qiita <- urls_df %>%
     type    = "application/atom+xml",
     title   = "Atom Feed",
     href    = str_c(website, "/feed")
-  )
+  ) %>%
+  distinct()
 ```
 
 ### Rpubs
