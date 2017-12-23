@@ -1,651 +1,651 @@
-website,rel,type,title,href,id
-http://blog.revolutionanalytics.com/,alternate,application/atom+xml,Posts on 'Revolutions' (Atom),http://blog.revolutionanalytics.com/atom.xml,NA
-http://blog.revolutionanalytics.com/,alternate,application/rss+xml,Posts on 'Revolutions' (RSS 1.0),http://blog.revolutionanalytics.com/index.rdf,NA
-http://blog.revolutionanalytics.com/,alternate,application/rss+xml,Posts on 'Revolutions' (RSS 2.0),http://blog.revolutionanalytics.com/rss.xml,NA
-https://research.googleblog.com/,alternate,application/atom+xml,Research Blog - Atom,https://research.googleblog.com/feeds/posts/default,NA
-https://research.googleblog.com/,alternate,application/rss+xml,Research Blog - RSS,https://research.googleblog.com/feeds/posts/default?alt=rss,NA
-https://waterprogramming.wordpress.com/,alternate,application/rss+xml,Water Programming: A Collaborative Research Blog » Feed,https://waterprogramming.wordpress.com/feed/,NA
-https://waterprogramming.wordpress.com/,alternate,application/rss+xml,Water Programming: A Collaborative Research Blog » Comments Feed,https://waterprogramming.wordpress.com/comments/feed/,NA
-http://doingbayesiandataanalysis.blogspot.jp/,alternate,application/atom+xml,Doing Bayesian Data Analysis - Atom,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default,NA
-http://doingbayesiandataanalysis.blogspot.jp/,alternate,application/rss+xml,Doing Bayesian Data Analysis - RSS,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default?alt=rss,NA
-http://blog.kaggle.com/,alternate,application/rss+xml,No Free Hunch » Feed,http://blog.kaggle.com/feed/,NA
-http://blog.kaggle.com/,alternate,application/rss+xml,No Free Hunch » Comments Feed,http://blog.kaggle.com/comments/feed/,NA
-http://fastml.com/,alternate,application/atom+xml,FastML,/atom.xml,NA
-http://syclik.com/,alternate,application/rss+xml,RSS,/atom.xml,NA
-https://xianblog.wordpress.com/,alternate,application/rss+xml,Xi'an's Og » Feed,https://xianblog.wordpress.com/feed/,NA
-https://xianblog.wordpress.com/,alternate,application/rss+xml,Xi'an's Og » Comments Feed,https://xianblog.wordpress.com/comments/feed/,NA
-http://notchained.hatenablog.com/,alternate,application/atom+xml,Atom,http://notchained.hatenablog.com/feed,NA
-http://notchained.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://notchained.hatenablog.com/rss,NA
-http://varianceexplained.org/,alternate,application/atom+xml,Variance Explained Feed,http://varianceexplained.org/feed.xml,NA
-http://abrahamcow.hatenablog.com/,alternate,application/atom+xml,Atom,http://abrahamcow.hatenablog.com/feed,NA
-http://abrahamcow.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://abrahamcow.hatenablog.com/rss,NA
-http://ibisforest.blog4.fc2.com/,alternate,application/rss+xml,RSS,http://ibisforest.blog4.fc2.com/?xml,NA
-http://www.yasuhisay.info/,alternate,application/atom+xml,Atom,http://www.yasuhisay.info/feed,NA
-http://www.yasuhisay.info/,alternate,application/rss+xml,RSS2.0,http://www.yasuhisay.info/rss,NA
-https://fisproject.jp/,alternate,application/rss+xml,FiS Project » フィード,https://fisproject.jp/feed/,NA
-https://fisproject.jp/,alternate,application/rss+xml,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/,NA
-https://www.karada-good.net/,alternate,application/rss+xml,からだにいいもの RSS Feed,https://www.karada-good.net/feed,NA
-http://kivantium.hateblo.jp/,alternate,application/atom+xml,Atom,http://kivantium.hateblo.jp/feed,NA
-http://kivantium.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://kivantium.hateblo.jp/rss,NA
-http://catindog.hatenablog.com/,alternate,application/atom+xml,Atom,http://catindog.hatenablog.com/feed,NA
-http://catindog.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://catindog.hatenablog.com/rss,NA
-http://kamonohashiperry.com/,alternate,application/rss+xml,かものはしの分析ブログ » フィード,http://kamonohashiperry.com/feed,NA
-http://kamonohashiperry.com/,alternate,application/rss+xml,かものはしの分析ブログ » コメントフィード,http://kamonohashiperry.com/comments/feed,NA
-http://kamonohashiperry.com/,alternate,application/json+oembed,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F,NA
-http://kamonohashiperry.com/,alternate,text/xml+oembed,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F&format=xml,NA
-http://nonbiri-tereka.hatenablog.com/,alternate,application/atom+xml,Atom,http://nonbiri-tereka.hatenablog.com/feed,NA
-http://nonbiri-tereka.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://nonbiri-tereka.hatenablog.com/rss,NA
-http://uribo.hatenablog.com/,alternate,application/atom+xml,Atom,http://uribo.hatenablog.com/feed,NA
-http://uribo.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://uribo.hatenablog.com/rss,NA
-http://tekenuko.hatenablog.com/,alternate,application/atom+xml,Atom,http://tekenuko.hatenablog.com/feed,NA
-http://tekenuko.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tekenuko.hatenablog.com/rss,NA
-https://ashibata.com/,alternate,application/rss+xml,Data » フィード,https://ashibata.com/feed/,NA
-https://ashibata.com/,alternate,application/rss+xml,Data » コメントフィード,https://ashibata.com/comments/feed/,NA
-http://yutori-datascience.hatenablog.com/,alternate,application/atom+xml,Atom,http://yutori-datascience.hatenablog.com/feed,NA
-http://yutori-datascience.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yutori-datascience.hatenablog.com/rss,NA
-http://sucrose.hatenablog.com/,alternate,application/atom+xml,Atom,http://sucrose.hatenablog.com/feed,NA
-http://sucrose.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sucrose.hatenablog.com/rss,NA
-http://hikaru1122.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://hikaru1122.hatenadiary.jp/feed,NA
-http://hikaru1122.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://hikaru1122.hatenadiary.jp/rss,NA
-http://smrmkt.hatenablog.jp/,alternate,application/atom+xml,Atom,http://smrmkt.hatenablog.jp/feed,NA
-http://smrmkt.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://smrmkt.hatenablog.jp/rss,NA
-http://kiito.hatenablog.com/,alternate,application/atom+xml,Atom,http://kiito.hatenablog.com/feed,NA
-http://kiito.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kiito.hatenablog.com/rss,NA
-http://yusuke-ujitoko.hatenablog.com/,alternate,application/atom+xml,Atom,http://yusuke-ujitoko.hatenablog.com/feed,NA
-http://yusuke-ujitoko.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yusuke-ujitoko.hatenablog.com/rss,NA
-http://yamano357.hatenadiary.com/,alternate,application/atom+xml,Atom,http://yamano357.hatenadiary.com/feed,NA
-http://yamano357.hatenadiary.com/,alternate,application/rss+xml,RSS2.0,http://yamano357.hatenadiary.com/rss,NA
-http://id.fnshr.info/,alternate,application/rss+xml,Colorless Green Ideas » フィード,http://id.fnshr.info/feed/,NA
-http://id.fnshr.info/,alternate,application/rss+xml,Colorless Green Ideas » コメントフィード,http://id.fnshr.info/comments/feed/,NA
-http://www.unofficialgoogledatascience.com/,alternate,application/atom+xml,The Unofficial Google Data Science Blog - Atom,http://www.unofficialgoogledatascience.com/feeds/posts/default,NA
-http://www.unofficialgoogledatascience.com/,alternate,application/rss+xml,The Unofficial Google Data Science Blog - RSS,http://www.unofficialgoogledatascience.com/feeds/posts/default?alt=rss,NA
-http://skozawa.hatenablog.com/,alternate,application/atom+xml,Atom,http://skozawa.hatenablog.com/feed,NA
-http://skozawa.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://skozawa.hatenablog.com/rss,NA
-http://kkimura.hatenablog.com/,alternate,application/atom+xml,Atom,http://kkimura.hatenablog.com/feed,NA
-http://kkimura.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kkimura.hatenablog.com/rss,NA
-http://kosugitti.net/,alternate,application/rss+xml,Kosugitti Labo ver.9 » フィード,http://kosugitti.net/feed,NA
-http://kosugitti.net/,alternate,application/rss+xml,Kosugitti Labo ver.9 » コメントフィード,http://kosugitti.net/comments/feed,NA
-http://kosugitti.net/,alternate,application/json+oembed,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F,NA
-http://kosugitti.net/,alternate,text/xml+oembed,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F&format=xml,NA
-http://estrellita.hatenablog.com/,alternate,application/atom+xml,Atom,http://estrellita.hatenablog.com/feed,NA
-http://estrellita.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://estrellita.hatenablog.com/rss,NA
-http://takehiko-i-hayashi.hatenablog.com/,alternate,application/atom+xml,Atom,http://takehiko-i-hayashi.hatenablog.com/feed,NA
-http://takehiko-i-hayashi.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://takehiko-i-hayashi.hatenablog.com/rss,NA
-http://ill-identified.hatenablog.com/,alternate,application/atom+xml,Atom,http://ill-identified.hatenablog.com/feed,NA
-http://ill-identified.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://ill-identified.hatenablog.com/rss,NA
-http://mathetake.hatenablog.com/,alternate,application/atom+xml,Atom,http://mathetake.hatenablog.com/feed,NA
-http://mathetake.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://mathetake.hatenablog.com/rss,NA
-http://r-statistics-fan.hatenablog.com/,alternate,application/atom+xml,Atom,http://r-statistics-fan.hatenablog.com/feed,NA
-http://r-statistics-fan.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://r-statistics-fan.hatenablog.com/rss,NA
-http://shinaisan.hatenablog.com/,alternate,application/atom+xml,Atom,http://shinaisan.hatenablog.com/feed,NA
-http://shinaisan.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://shinaisan.hatenablog.com/rss,NA
-http://norimune.net/,alternate,application/rss+xml,Sunny side up! » フィード,http://norimune.net/feed,NA
-http://norimune.net/,alternate,application/rss+xml,Sunny side up! » コメントフィード,http://norimune.net/comments/feed,NA
-http://norimune.net/,alternate,application/json+oembed,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F,NA
-http://norimune.net/,alternate,text/xml+oembed,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F&format=xml,NA
-https://statr.me/,alternate,application/rss+xml,RSS,https://statr.me/index.xml,NA
-http://yamaguchiyuto.hatenablog.com/,alternate,application/atom+xml,Atom,http://yamaguchiyuto.hatenablog.com/feed,NA
-http://yamaguchiyuto.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yamaguchiyuto.hatenablog.com/rss,NA
-http://uncorrelated.hatenablog.com/,alternate,application/atom+xml,Atom,http://uncorrelated.hatenablog.com/feed,NA
-http://uncorrelated.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://uncorrelated.hatenablog.com/rss,NA
-https://blog.albert2005.co.jp/,alternate,application/rss+xml,ALBERT Official Blog » フィード,https://blog.albert2005.co.jp/feed/,NA
-https://blog.albert2005.co.jp/,alternate,application/rss+xml,ALBERT Official Blog » コメントフィード,https://blog.albert2005.co.jp/comments/feed/,NA
-https://logics-of-blue.com/,alternate,application/rss+xml,Logics of Blue » フィード,https://logics-of-blue.com/feed/,NA
-https://logics-of-blue.com/,alternate,application/rss+xml,Logics of Blue » コメントフィード,https://logics-of-blue.com/comments/feed/,NA
-https://logics-of-blue.com/,alternate,application/json+oembed,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F,NA
-https://logics-of-blue.com/,alternate,text/xml+oembed,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F&format=xml,NA
-http://statmodeling.hatenablog.com/,alternate,application/atom+xml,Atom,http://statmodeling.hatenablog.com/feed,NA
-http://statmodeling.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://statmodeling.hatenablog.com/rss,NA
-https://martynplummer.wordpress.com/,alternate,application/rss+xml,JAGS News » Feed,https://martynplummer.wordpress.com/feed/,NA
-https://martynplummer.wordpress.com/,alternate,application/rss+xml,JAGS News » Comments Feed,https://martynplummer.wordpress.com/comments/feed/,NA
-http://blog.hoxo-m.com/,alternate,application/rss+xml,株式会社ホクソエムのブログ,http://blog.hoxo-m.com/index.xml,NA
-http://tatabox.hatenablog.com/,alternate,application/atom+xml,Atom,http://tatabox.hatenablog.com/feed,NA
-http://tatabox.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tatabox.hatenablog.com/rss,NA
-http://keiku.hatenablog.jp/,alternate,application/atom+xml,Atom,http://keiku.hatenablog.jp/feed,NA
-http://keiku.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://keiku.hatenablog.jp/rss,NA
-http://musyoku.github.io/,alternate,application/rss+xml,ご注文は機械学習ですか？ - https://twitter.com/musyokudon,/feed.xml,NA
-http://nonki1974.hateblo.jp/,alternate,application/atom+xml,Atom,http://nonki1974.hateblo.jp/feed,NA
-http://nonki1974.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://nonki1974.hateblo.jp/rss,NA
-http://aidiary.hatenablog.com/,alternate,application/atom+xml,Atom,http://aidiary.hatenablog.com/feed,NA
-http://aidiary.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://aidiary.hatenablog.com/rss,NA
-http://cordea.hatenadiary.com/,alternate,application/atom+xml,Atom,http://cordea.hatenadiary.com/feed,NA
-http://cordea.hatenadiary.com/,alternate,application/rss+xml,RSS2.0,http://cordea.hatenadiary.com/rss,NA
-http://aaaazzzz036.hatenablog.com/,alternate,application/atom+xml,Atom,http://aaaazzzz036.hatenablog.com/feed,NA
-http://aaaazzzz036.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://aaaazzzz036.hatenablog.com/rss,NA
-https://mrunadon.github.io/,alternate,application/rss+xml,MrUnadon - Bayesian Statistical Modelings with R and Rstan,/feed.xml,NA
-https://darrenjw.wordpress.com/,alternate,application/rss+xml,Darren Wilkinson's research blog » Feed,https://darrenjw.wordpress.com/feed/,NA
-https://darrenjw.wordpress.com/,alternate,application/rss+xml,Darren Wilkinson's research blog » Comments Feed,https://darrenjw.wordpress.com/comments/feed/,NA
-http://wakuteka.hatenablog.jp/,alternate,application/atom+xml,Atom,http://wakuteka.hatenablog.jp/feed,NA
-http://wakuteka.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://wakuteka.hatenablog.jp/rss,NA
-http://marugari2.hatenablog.jp/,alternate,application/atom+xml,Atom,http://marugari2.hatenablog.jp/feed,NA
-http://marugari2.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://marugari2.hatenablog.jp/rss,NA
-http://handasse.blogspot.jp/,alternate,application/atom+xml,良いもの。悪いもの。 - Atom,http://handasse.blogspot.com/feeds/posts/default,NA
-http://handasse.blogspot.jp/,alternate,application/rss+xml,良いもの。悪いもの。 - RSS,http://handasse.blogspot.com/feeds/posts/default?alt=rss,NA
-http://triadsou.hatenablog.com/,alternate,application/atom+xml,Atom,http://triadsou.hatenablog.com/feed,NA
-http://triadsou.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://triadsou.hatenablog.com/rss,NA
-http://blogs2.datall-analyse.nl/,alternate,application/rss+xml,"R code, simulations, and modeling » Feed",http://blogs2.datall-analyse.nl/feed/,NA
-http://blogs2.datall-analyse.nl/,alternate,application/rss+xml,"R code, simulations, and modeling » Comments Feed",http://blogs2.datall-analyse.nl/comments/feed/,NA
-https://www.fisproject.jp/,alternate,application/rss+xml,FiS Project » フィード,https://fisproject.jp/feed/,NA
-https://www.fisproject.jp/,alternate,application/rss+xml,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/,NA
-http://xiangze.hatenablog.com/,alternate,application/atom+xml,Atom,http://xiangze.hatenablog.com/feed,NA
-http://xiangze.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://xiangze.hatenablog.com/rss,NA
-http://www.magesblog.com/,alternate,application/rss+xml,mages' blog,https://magesblog.com/index.xml,NA
-https://research.preferred.jp/,alternate,application/rss+xml,Preferred Research Blog,https://research.preferred.jp/feed/,NA
-http://sora-sakaki.hatenablog.com/,alternate,application/atom+xml,Atom,http://sora-sakaki.hatenablog.com/feed,NA
-http://sora-sakaki.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sora-sakaki.hatenablog.com/rss,NA
-https://blog.exploratory.io/,alternate,application/rss+xml,RSS,https://blog.exploratory.io/feed,feedLink
-https://blog.exploratory.io/,alternate,NA,NA,android-app://com.medium.reader/https/medium.com/learn-dplyr,NA
-http://rindai87.hatenablog.jp/,alternate,application/atom+xml,Atom,http://rindai87.hatenablog.jp/feed,NA
-http://rindai87.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://rindai87.hatenablog.jp/rss,NA
-http://nekopuni.holy.jp/,alternate,application/rss+xml,Momentum » Feed,http://nekopuni.holy.jp/feed/,NA
-http://nekopuni.holy.jp/,alternate,application/rss+xml,Momentum » Comments Feed,http://nekopuni.holy.jp/comments/feed/,NA
-http://tjo.hatenablog.com/,alternate,application/atom+xml,Atom,http://tjo.hatenablog.com/feed,NA
-http://tjo.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://tjo.hatenablog.com/rss,NA
-http://nhkuma.blogspot.jp/,alternate,application/atom+xml,random dispersal - Atom,http://nhkuma.blogspot.com/feeds/posts/default,NA
-http://nhkuma.blogspot.jp/,alternate,application/rss+xml,random dispersal - RSS,http://nhkuma.blogspot.com/feeds/posts/default?alt=rss,NA
-http://takeshid.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://takeshid.hatenadiary.jp/feed,NA
-http://takeshid.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://takeshid.hatenadiary.jp/rss,NA
-http://postd.cc/,alternate,application/rss+xml,RSS,http://postd.cc/feed/,NA
-http://leeswijzer.hatenablog.com/,alternate,application/atom+xml,Atom,http://leeswijzer.hatenablog.com/feed,NA
-http://leeswijzer.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://leeswijzer.hatenablog.com/rss,NA
-https://healthyalgorithms.com/,alternate,application/rss+xml,Healthy Algorithms » Feed,https://healthyalgorithms.com/feed/,NA
-https://healthyalgorithms.com/,alternate,application/rss+xml,Healthy Algorithms » Comments Feed,https://healthyalgorithms.com/comments/feed/,NA
-http://blog.shakirm.com/,alternate,application/rss+xml,The Spectator » Feed,http://blog.shakirm.com/feed/,NA
-http://blog.shakirm.com/,alternate,application/rss+xml,The Spectator » Comments Feed,http://blog.shakirm.com/comments/feed/,NA
-http://oscillograph.hateblo.jp/,alternate,application/atom+xml,Atom,http://oscillograph.hateblo.jp/feed,NA
-http://oscillograph.hateblo.jp/,alternate,application/rss+xml,RSS2.0,http://oscillograph.hateblo.jp/rss,NA
-http://wafdata.hatenablog.com/,alternate,application/atom+xml,Atom,http://wafdata.hatenablog.com/feed,NA
-http://wafdata.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://wafdata.hatenablog.com/rss,NA
-http://wildpie.hatenablog.com/,alternate,application/atom+xml,Atom,http://wildpie.hatenablog.com/feed,NA
-http://wildpie.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://wildpie.hatenablog.com/rss,NA
-http://laughing.hatenablog.com/,alternate,application/atom+xml,Atom,http://laughing.hatenablog.com/feed,NA
-http://laughing.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://laughing.hatenablog.com/rss,NA
-http://machine-learning.hatenablog.com/,alternate,application/atom+xml,Atom,http://machine-learning.hatenablog.com/feed,NA
-http://machine-learning.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://machine-learning.hatenablog.com/rss,NA
-http://hi-king.hatenablog.com/,alternate,application/atom+xml,Atom,http://hi-king.hatenablog.com/feed,NA
-http://hi-king.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://hi-king.hatenablog.com/rss,NA
-http://www.computervisionblog.com/,alternate,application/atom+xml,Tombone's Computer Vision Blog - Atom,http://www.computervisionblog.com/feeds/posts/default,NA
-http://www.computervisionblog.com/,alternate,application/rss+xml,Tombone's Computer Vision Blog - RSS,http://www.computervisionblog.com/feeds/posts/default?alt=rss,NA
-http://bicycle1885.hatenablog.com/,alternate,application/atom+xml,Atom,http://bicycle1885.hatenablog.com/feed,NA
-http://bicycle1885.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://bicycle1885.hatenablog.com/rss,NA
-https://blog.recyclebin.jp/,alternate,application/rss+xml,捨てられたブログ » フィード,https://blog.recyclebin.jp/feed,NA
-https://blog.recyclebin.jp/,alternate,application/rss+xml,捨てられたブログ » コメントフィード,https://blog.recyclebin.jp/comments/feed,NA
-https://shapeofdata.wordpress.com/,alternate,application/rss+xml,The Shape of Data » Feed,https://shapeofdata.wordpress.com/feed/,NA
-https://shapeofdata.wordpress.com/,alternate,application/rss+xml,The Shape of Data » Comments Feed,https://shapeofdata.wordpress.com/comments/feed/,NA
-http://statchiraura.blog.fc2.com/,alternate,application/rss+xml,RSS,http://statchiraura.blog.fc2.com/?xml,NA
-http://soonraah.hatenablog.com/,alternate,application/atom+xml,Atom,http://soonraah.hatenablog.com/feed,NA
-http://soonraah.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://soonraah.hatenablog.com/rss,NA
-http://yukinoi.hatenablog.com/,alternate,application/atom+xml,Atom,http://yukinoi.hatenablog.com/feed,NA
-http://yukinoi.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://yukinoi.hatenablog.com/rss,NA
-http://sinhrks.hatenablog.com/,alternate,application/atom+xml,Atom,http://sinhrks.hatenablog.com/feed,NA
-http://sinhrks.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://sinhrks.hatenablog.com/rss,NA
-http://rion778.hatenablog.com/,alternate,application/atom+xml,Atom,http://rion778.hatenablog.com/feed,NA
-http://rion778.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://rion778.hatenablog.com/rss,NA
-http://ito-hi.blog.so-net.ne.jp/,alternate,application/rss+xml,RSS,http://ito-hi.blog.so-net.ne.jp/index.rdf,NA
-http://ito-hi.blog.so-net.ne.jp/,alternate,application/atom+xml,Atom,http://ito-hi.blog.so-net.ne.jp/atom.xml,NA
-http://andrewgelman.com/,alternate,application/rss+xml,"Statistical Modeling, Causal Inference, and Social Science » Feed",http://andrewgelman.com/feed/,NA
-http://andrewgelman.com/,alternate,application/rss+xml,"Statistical Modeling, Causal Inference, and Social Science » Comments Feed",http://andrewgelman.com/comments/feed/,NA
-http://ouzor.github.io/,alternate,application/rss+xml,Juuso Parkkinen - Juuso's personal web page,/feed.xml,NA
-http://blog-jp.treasuredata.com/,alternate,application/atom+xml,Atom,http://blog-jp.treasuredata.com/feed,NA
-http://blog-jp.treasuredata.com/,alternate,application/rss+xml,RSS2.0,http://blog-jp.treasuredata.com/rss,NA
-http://nakhirot.hatenablog.com/,alternate,application/atom+xml,Atom,http://nakhirot.hatenablog.com/feed,NA
-http://nakhirot.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://nakhirot.hatenablog.com/rss,NA
-http://pingpongpangpong.blogspot.jp/,alternate,application/atom+xml,white page - Atom,http://pingpongpangpong.blogspot.com/feeds/posts/default,NA
-http://pingpongpangpong.blogspot.jp/,alternate,application/rss+xml,white page - RSS,http://pingpongpangpong.blogspot.com/feeds/posts/default?alt=rss,NA
-http://highschoolstudent.hatenablog.com/,alternate,application/atom+xml,Atom,http://highschoolstudent.hatenablog.com/feed,NA
-http://highschoolstudent.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://highschoolstudent.hatenablog.com/rss,NA
-http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,RSS 2.0,http://aial.shiroyagi.co.jp/feed/,NA
-http://aial.shiroyagi.co.jp/,alternate,text/xml,RSS .92,http://aial.shiroyagi.co.jp/feed/rss/,NA
-http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,カメリオ開発者ブログ » フィード,http://aial.shiroyagi.co.jp/feed/,NA
-http://aial.shiroyagi.co.jp/,alternate,application/rss+xml,カメリオ開発者ブログ » コメントフィード,http://aial.shiroyagi.co.jp/comments/feed/,NA
-http://kazoo04.hatenablog.com/,alternate,application/atom+xml,Atom,http://kazoo04.hatenablog.com/feed,NA
-http://kazoo04.hatenablog.com/,alternate,application/rss+xml,RSS2.0,http://kazoo04.hatenablog.com/rss,NA
-http://karpathy.github.io/,alternate,application/atom+xml,Andrej Karpathy blog posts,/feed.xml,NA
-http://hiratake55.hatenadiary.jp/,alternate,application/atom+xml,Atom,http://hiratake55.hatenadiary.jp/feed,NA
-http://hiratake55.hatenadiary.jp/,alternate,application/rss+xml,RSS2.0,http://hiratake55.hatenadiary.jp/rss,NA
-http://abicky.hatenablog.jp/,alternate,application/atom+xml,Atom,http://abicky.hatenablog.jp/feed,NA
-http://abicky.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://abicky.hatenablog.jp/rss,NA
-http://y-uti.hatenablog.jp/,alternate,application/atom+xml,Atom,http://y-uti.hatenablog.jp/feed,NA
-http://y-uti.hatenablog.jp/,alternate,application/rss+xml,RSS2.0,http://y-uti.hatenablog.jp/rss,NA
-http://mockquant.blogspot.jp/,alternate,application/atom+xml,HOXO-M  - anonymous data analyst group in Japan -   - Atom,http://mockquant.blogspot.com/feeds/posts/default,NA
-http://mockquant.blogspot.jp/,alternate,application/rss+xml,HOXO-M  - anonymous data analyst group in Japan -   - RSS,http://mockquant.blogspot.com/feeds/posts/default?alt=rss,NA
-http://opisthokonta.net/,alternate,application/rss+xml,opisthokonta.net » Feed,http://opisthokonta.net/?feed=rss2,NA
-http://opisthokonta.net/,alternate,application/rss+xml,opisthokonta.net » Comments Feed,http://opisthokonta.net/?feed=comments-rss2,NA
-http://ill-identified.hatenablog.com,alternate,application/atom+xml,Atom,http://ill-identified.hatenablog.com/feed,NA
-http://ill-identified.hatenablog.com,alternate,application/rss+xml,RSS2.0,http://ill-identified.hatenablog.com/rss,NA
-http://estrellita.hatenablog.com,alternate,application/atom+xml,Atom,http://estrellita.hatenablog.com/feed,NA
-http://estrellita.hatenablog.com,alternate,application/rss+xml,RSS2.0,http://estrellita.hatenablog.com/rss,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hamadakoichi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/n_shuyo,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/n_shuyo,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/n_shuyo,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/n_shuyo,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/hamadakoichi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hamadakoichi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/repose,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/repose/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hamadakoichi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/rikunora,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hamadakoichi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/MikuHatsune,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2,NA
-http://d.hatena.ne.jp/hoxo_m,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/dichika,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-http://d.hatena.ne.jp/jetbead,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2,NA
-http://d.hatena.ne.jp/teramonagi,alternate,application/rss+xml,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/ynakayama,alternate,application/atom+xml,Atom Feed,https://qiita.com/ynakayama/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kenmatsu4,alternate,application/atom+xml,Atom Feed,https://qiita.com/kenmatsu4/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kenmatsu4,alternate,application/atom+xml,Atom Feed,https://qiita.com/kenmatsu4/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kenmatsu4,alternate,application/atom+xml,Atom Feed,https://qiita.com/kenmatsu4/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/shima_x,alternate,application/atom+xml,Atom Feed,https://qiita.com/shima_x/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kenmatsu4,alternate,application/atom+xml,Atom Feed,https://qiita.com/kenmatsu4/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/ynakayama,alternate,application/atom+xml,Atom Feed,https://qiita.com/ynakayama/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/masasora,alternate,application/atom+xml,Atom Feed,https://qiita.com/masasora/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/yuifu,alternate,application/atom+xml,Atom Feed,https://qiita.com/yuifu/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/siero5335,alternate,application/atom+xml,Atom Feed,https://qiita.com/siero5335/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/kohske,alternate,application/atom+xml,Atom Feed,https://qiita.com/kohske/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/Quasi-quant2010,alternate,application/atom+xml,Atom Feed,https://qiita.com/Quasi-quant2010/feed,NA
-https://qiita.com/kohske,alternate,application/atom+xml,Atom Feed,https://qiita.com/kohske/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/kohske,alternate,application/atom+xml,Atom Feed,https://qiita.com/kohske/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/kohske,alternate,application/atom+xml,Atom Feed,https://qiita.com/kohske/feed,NA
-https://qiita.com/yukinoi,alternate,application/atom+xml,Atom Feed,https://qiita.com/yukinoi/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/shima_x,alternate,application/atom+xml,Atom Feed,https://qiita.com/shima_x/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/ynakayama,alternate,application/atom+xml,Atom Feed,https://qiita.com/ynakayama/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/icoxfog417,alternate,application/atom+xml,Atom Feed,https://qiita.com/icoxfog417/feed,NA
-https://qiita.com/ynakayama,alternate,application/atom+xml,Atom Feed,https://qiita.com/ynakayama/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/Quasi-quant2010,alternate,application/atom+xml,Atom Feed,https://qiita.com/Quasi-quant2010/feed,NA
-https://qiita.com/tn1031,alternate,application/atom+xml,Atom Feed,https://qiita.com/tn1031/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/nakamichi,alternate,application/atom+xml,Atom Feed,https://qiita.com/nakamichi/feed,NA
-https://qiita.com/wakuteka,alternate,application/atom+xml,Atom Feed,https://qiita.com/wakuteka/feed,NA
-https://qiita.com/airtoxin,alternate,application/atom+xml,Atom Feed,https://qiita.com/airtoxin/feed,NA
-https://qiita.com/yamano357,alternate,application/atom+xml,Atom Feed,https://qiita.com/yamano357/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/hoxo_m,alternate,application/atom+xml,Atom Feed,https://qiita.com/hoxo_m/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/Quasi-quant2010,alternate,application/atom+xml,Atom Feed,https://qiita.com/Quasi-quant2010/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/miyamotok0105,alternate,application/atom+xml,Atom Feed,https://qiita.com/miyamotok0105/feed,NA
-https://qiita.com/TomokIshii,alternate,application/atom+xml,Atom Feed,https://qiita.com/TomokIshii/feed,NA
-https://qiita.com/kazutan,alternate,application/atom+xml,Atom Feed,https://qiita.com/kazutan/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-https://qiita.com/uri,alternate,application/atom+xml,Atom Feed,https://qiita.com/uri/feed,NA
-https://qiita.com/kenmatsu4,alternate,application/atom+xml,Atom Feed,https://qiita.com/kenmatsu4/feed,NA
-https://qiita.com/kohske,alternate,application/atom+xml,Atom Feed,https://qiita.com/kohske/feed,NA
-https://qiita.com/GushiSnow,alternate,application/atom+xml,Atom Feed,https://qiita.com/GushiSnow/feed,NA
-NA,alternate,application/atom+xml,Atom Feed,NA,NA
-https://qiita.com/tn1031,alternate,application/atom+xml,Atom Feed,https://qiita.com/tn1031/feed,NA
+website,title,href
+http://blog.revolutionanalytics.com/,Posts on 'Revolutions' (Atom),http://blog.revolutionanalytics.com/atom.xml
+http://blog.revolutionanalytics.com/,Posts on 'Revolutions' (RSS 1.0),http://blog.revolutionanalytics.com/index.rdf
+http://blog.revolutionanalytics.com/,Posts on 'Revolutions' (RSS 2.0),http://blog.revolutionanalytics.com/rss.xml
+https://research.googleblog.com/,Research Blog - Atom,https://research.googleblog.com/feeds/posts/default
+https://research.googleblog.com/,Research Blog - RSS,https://research.googleblog.com/feeds/posts/default?alt=rss
+https://waterprogramming.wordpress.com/,Water Programming: A Collaborative Research Blog » Feed,https://waterprogramming.wordpress.com/feed/
+https://waterprogramming.wordpress.com/,Water Programming: A Collaborative Research Blog » Comments Feed,https://waterprogramming.wordpress.com/comments/feed/
+http://doingbayesiandataanalysis.blogspot.jp/,Doing Bayesian Data Analysis - Atom,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default
+http://doingbayesiandataanalysis.blogspot.jp/,Doing Bayesian Data Analysis - RSS,http://doingbayesiandataanalysis.blogspot.com/feeds/posts/default?alt=rss
+http://blog.kaggle.com/,No Free Hunch » Feed,http://blog.kaggle.com/feed/
+http://blog.kaggle.com/,No Free Hunch » Comments Feed,http://blog.kaggle.com/comments/feed/
+http://fastml.com/,FastML,http://fastml.com/atom.xml
+http://syclik.com/,RSS,http://syclik.com/atom.xml
+https://xianblog.wordpress.com/,Xi'an's Og » Feed,https://xianblog.wordpress.com/feed/
+https://xianblog.wordpress.com/,Xi'an's Og » Comments Feed,https://xianblog.wordpress.com/comments/feed/
+http://notchained.hatenablog.com/,Atom,http://notchained.hatenablog.com/feed
+http://notchained.hatenablog.com/,RSS2.0,http://notchained.hatenablog.com/rss
+http://varianceexplained.org/,Variance Explained Feed,http://varianceexplained.org/feed.xml
+http://abrahamcow.hatenablog.com/,Atom,http://abrahamcow.hatenablog.com/feed
+http://abrahamcow.hatenablog.com/,RSS2.0,http://abrahamcow.hatenablog.com/rss
+http://ibisforest.blog4.fc2.com/,RSS,http://ibisforest.blog4.fc2.com/?xml
+http://www.yasuhisay.info/,Atom,http://www.yasuhisay.info/feed
+http://www.yasuhisay.info/,RSS2.0,http://www.yasuhisay.info/rss
+https://fisproject.jp/,FiS Project » フィード,https://fisproject.jp/feed/
+https://fisproject.jp/,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/
+https://www.karada-good.net/,からだにいいもの RSS Feed,https://www.karada-good.net/feed
+http://kivantium.hateblo.jp/,Atom,http://kivantium.hateblo.jp/feed
+http://kivantium.hateblo.jp/,RSS2.0,http://kivantium.hateblo.jp/rss
+http://catindog.hatenablog.com/,Atom,http://catindog.hatenablog.com/feed
+http://catindog.hatenablog.com/,RSS2.0,http://catindog.hatenablog.com/rss
+http://kamonohashiperry.com/,かものはしの分析ブログ » フィード,http://kamonohashiperry.com/feed
+http://kamonohashiperry.com/,かものはしの分析ブログ » コメントフィード,http://kamonohashiperry.com/comments/feed
+http://kamonohashiperry.com/,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F
+http://kamonohashiperry.com/,NA,http://kamonohashiperry.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkamonohashiperry.com%2F&format=xml
+http://nonbiri-tereka.hatenablog.com/,Atom,http://nonbiri-tereka.hatenablog.com/feed
+http://nonbiri-tereka.hatenablog.com/,RSS2.0,http://nonbiri-tereka.hatenablog.com/rss
+http://uribo.hatenablog.com/,Atom,http://uribo.hatenablog.com/feed
+http://uribo.hatenablog.com/,RSS2.0,http://uribo.hatenablog.com/rss
+http://tekenuko.hatenablog.com/,Atom,http://tekenuko.hatenablog.com/feed
+http://tekenuko.hatenablog.com/,RSS2.0,http://tekenuko.hatenablog.com/rss
+https://ashibata.com/,Data » フィード,https://ashibata.com/feed/
+https://ashibata.com/,Data » コメントフィード,https://ashibata.com/comments/feed/
+http://yutori-datascience.hatenablog.com/,Atom,http://yutori-datascience.hatenablog.com/feed
+http://yutori-datascience.hatenablog.com/,RSS2.0,http://yutori-datascience.hatenablog.com/rss
+http://sucrose.hatenablog.com/,Atom,http://sucrose.hatenablog.com/feed
+http://sucrose.hatenablog.com/,RSS2.0,http://sucrose.hatenablog.com/rss
+http://hikaru1122.hatenadiary.jp/,Atom,http://hikaru1122.hatenadiary.jp/feed
+http://hikaru1122.hatenadiary.jp/,RSS2.0,http://hikaru1122.hatenadiary.jp/rss
+http://smrmkt.hatenablog.jp/,Atom,http://smrmkt.hatenablog.jp/feed
+http://smrmkt.hatenablog.jp/,RSS2.0,http://smrmkt.hatenablog.jp/rss
+http://kiito.hatenablog.com/,Atom,http://kiito.hatenablog.com/feed
+http://kiito.hatenablog.com/,RSS2.0,http://kiito.hatenablog.com/rss
+http://yusuke-ujitoko.hatenablog.com/,Atom,http://yusuke-ujitoko.hatenablog.com/feed
+http://yusuke-ujitoko.hatenablog.com/,RSS2.0,http://yusuke-ujitoko.hatenablog.com/rss
+http://yamano357.hatenadiary.com/,Atom,http://yamano357.hatenadiary.com/feed
+http://yamano357.hatenadiary.com/,RSS2.0,http://yamano357.hatenadiary.com/rss
+http://id.fnshr.info/,Colorless Green Ideas » フィード,http://id.fnshr.info/feed/
+http://id.fnshr.info/,Colorless Green Ideas » コメントフィード,http://id.fnshr.info/comments/feed/
+http://www.unofficialgoogledatascience.com/,The Unofficial Google Data Science Blog - Atom,http://www.unofficialgoogledatascience.com/feeds/posts/default
+http://www.unofficialgoogledatascience.com/,The Unofficial Google Data Science Blog - RSS,http://www.unofficialgoogledatascience.com/feeds/posts/default?alt=rss
+http://skozawa.hatenablog.com/,Atom,http://skozawa.hatenablog.com/feed
+http://skozawa.hatenablog.com/,RSS2.0,http://skozawa.hatenablog.com/rss
+http://kkimura.hatenablog.com/,Atom,http://kkimura.hatenablog.com/feed
+http://kkimura.hatenablog.com/,RSS2.0,http://kkimura.hatenablog.com/rss
+http://kosugitti.net/,Kosugitti Labo ver.9 » フィード,http://kosugitti.net/feed
+http://kosugitti.net/,Kosugitti Labo ver.9 » コメントフィード,http://kosugitti.net/comments/feed
+http://kosugitti.net/,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F
+http://kosugitti.net/,NA,http://kosugitti.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkosugitti.net%2F&format=xml
+http://estrellita.hatenablog.com/,Atom,http://estrellita.hatenablog.com/feed
+http://estrellita.hatenablog.com/,RSS2.0,http://estrellita.hatenablog.com/rss
+http://takehiko-i-hayashi.hatenablog.com/,Atom,http://takehiko-i-hayashi.hatenablog.com/feed
+http://takehiko-i-hayashi.hatenablog.com/,RSS2.0,http://takehiko-i-hayashi.hatenablog.com/rss
+http://ill-identified.hatenablog.com/,Atom,http://ill-identified.hatenablog.com/feed
+http://ill-identified.hatenablog.com/,RSS2.0,http://ill-identified.hatenablog.com/rss
+http://mathetake.hatenablog.com/,Atom,http://mathetake.hatenablog.com/feed
+http://mathetake.hatenablog.com/,RSS2.0,http://mathetake.hatenablog.com/rss
+http://r-statistics-fan.hatenablog.com/,Atom,http://r-statistics-fan.hatenablog.com/feed
+http://r-statistics-fan.hatenablog.com/,RSS2.0,http://r-statistics-fan.hatenablog.com/rss
+http://shinaisan.hatenablog.com/,Atom,http://shinaisan.hatenablog.com/feed
+http://shinaisan.hatenablog.com/,RSS2.0,http://shinaisan.hatenablog.com/rss
+http://norimune.net/,Sunny side up! » フィード,http://norimune.net/feed
+http://norimune.net/,Sunny side up! » コメントフィード,http://norimune.net/comments/feed
+http://norimune.net/,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F
+http://norimune.net/,NA,http://norimune.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fnorimune.net%2F&format=xml
+https://statr.me/,RSS,https://statr.me/index.xml
+http://yamaguchiyuto.hatenablog.com/,Atom,http://yamaguchiyuto.hatenablog.com/feed
+http://yamaguchiyuto.hatenablog.com/,RSS2.0,http://yamaguchiyuto.hatenablog.com/rss
+http://uncorrelated.hatenablog.com/,Atom,http://uncorrelated.hatenablog.com/feed
+http://uncorrelated.hatenablog.com/,RSS2.0,http://uncorrelated.hatenablog.com/rss
+https://blog.albert2005.co.jp/,ALBERT Official Blog » フィード,https://blog.albert2005.co.jp/feed/
+https://blog.albert2005.co.jp/,ALBERT Official Blog » コメントフィード,https://blog.albert2005.co.jp/comments/feed/
+https://logics-of-blue.com/,Logics of Blue » フィード,https://logics-of-blue.com/feed/
+https://logics-of-blue.com/,Logics of Blue » コメントフィード,https://logics-of-blue.com/comments/feed/
+https://logics-of-blue.com/,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F
+https://logics-of-blue.com/,NA,https://logics-of-blue.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flogics-of-blue.com%2F&format=xml
+http://statmodeling.hatenablog.com/,Atom,http://statmodeling.hatenablog.com/feed
+http://statmodeling.hatenablog.com/,RSS2.0,http://statmodeling.hatenablog.com/rss
+https://martynplummer.wordpress.com/,JAGS News » Feed,https://martynplummer.wordpress.com/feed/
+https://martynplummer.wordpress.com/,JAGS News » Comments Feed,https://martynplummer.wordpress.com/comments/feed/
+http://blog.hoxo-m.com/,株式会社ホクソエムのブログ,http://blog.hoxo-m.com/index.xml
+http://tatabox.hatenablog.com/,Atom,http://tatabox.hatenablog.com/feed
+http://tatabox.hatenablog.com/,RSS2.0,http://tatabox.hatenablog.com/rss
+http://keiku.hatenablog.jp/,Atom,http://keiku.hatenablog.jp/feed
+http://keiku.hatenablog.jp/,RSS2.0,http://keiku.hatenablog.jp/rss
+http://musyoku.github.io/,ご注文は機械学習ですか？ - https://twitter.com/musyokudon,http://musyoku.github.io/feed.xml
+http://nonki1974.hateblo.jp/,Atom,http://nonki1974.hateblo.jp/feed
+http://nonki1974.hateblo.jp/,RSS2.0,http://nonki1974.hateblo.jp/rss
+http://aidiary.hatenablog.com/,Atom,http://aidiary.hatenablog.com/feed
+http://aidiary.hatenablog.com/,RSS2.0,http://aidiary.hatenablog.com/rss
+http://cordea.hatenadiary.com/,Atom,http://cordea.hatenadiary.com/feed
+http://cordea.hatenadiary.com/,RSS2.0,http://cordea.hatenadiary.com/rss
+http://aaaazzzz036.hatenablog.com/,Atom,http://aaaazzzz036.hatenablog.com/feed
+http://aaaazzzz036.hatenablog.com/,RSS2.0,http://aaaazzzz036.hatenablog.com/rss
+https://mrunadon.github.io/,MrUnadon - Bayesian Statistical Modelings with R and Rstan,https://mrunadon.github.io/feed.xml
+https://darrenjw.wordpress.com/,Darren Wilkinson's research blog » Feed,https://darrenjw.wordpress.com/feed/
+https://darrenjw.wordpress.com/,Darren Wilkinson's research blog » Comments Feed,https://darrenjw.wordpress.com/comments/feed/
+http://wakuteka.hatenablog.jp/,Atom,http://wakuteka.hatenablog.jp/feed
+http://wakuteka.hatenablog.jp/,RSS2.0,http://wakuteka.hatenablog.jp/rss
+http://marugari2.hatenablog.jp/,Atom,http://marugari2.hatenablog.jp/feed
+http://marugari2.hatenablog.jp/,RSS2.0,http://marugari2.hatenablog.jp/rss
+http://handasse.blogspot.jp/,良いもの。悪いもの。 - Atom,http://handasse.blogspot.com/feeds/posts/default
+http://handasse.blogspot.jp/,良いもの。悪いもの。 - RSS,http://handasse.blogspot.com/feeds/posts/default?alt=rss
+http://triadsou.hatenablog.com/,Atom,http://triadsou.hatenablog.com/feed
+http://triadsou.hatenablog.com/,RSS2.0,http://triadsou.hatenablog.com/rss
+http://blogs2.datall-analyse.nl/,"R code, simulations, and modeling » Feed",http://blogs2.datall-analyse.nl/feed/
+http://blogs2.datall-analyse.nl/,"R code, simulations, and modeling » Comments Feed",http://blogs2.datall-analyse.nl/comments/feed/
+https://www.fisproject.jp/,FiS Project » フィード,https://fisproject.jp/feed/
+https://www.fisproject.jp/,FiS Project » コメントフィード,https://fisproject.jp/comments/feed/
+http://xiangze.hatenablog.com/,Atom,http://xiangze.hatenablog.com/feed
+http://xiangze.hatenablog.com/,RSS2.0,http://xiangze.hatenablog.com/rss
+http://www.magesblog.com/,mages' blog,https://magesblog.com/index.xml
+https://research.preferred.jp/,Preferred Research Blog,https://research.preferred.jp/feed/
+http://sora-sakaki.hatenablog.com/,Atom,http://sora-sakaki.hatenablog.com/feed
+http://sora-sakaki.hatenablog.com/,RSS2.0,http://sora-sakaki.hatenablog.com/rss
+https://blog.exploratory.io/,RSS,https://blog.exploratory.io/feed
+https://blog.exploratory.io/,NA,https://blog.exploratory.io/ndroid-app://com.medium.reader/https/medium.com/learn-dplyr
+http://rindai87.hatenablog.jp/,Atom,http://rindai87.hatenablog.jp/feed
+http://rindai87.hatenablog.jp/,RSS2.0,http://rindai87.hatenablog.jp/rss
+http://nekopuni.holy.jp/,Momentum » Feed,http://nekopuni.holy.jp/feed/
+http://nekopuni.holy.jp/,Momentum » Comments Feed,http://nekopuni.holy.jp/comments/feed/
+http://tjo.hatenablog.com/,Atom,http://tjo.hatenablog.com/feed
+http://tjo.hatenablog.com/,RSS2.0,http://tjo.hatenablog.com/rss
+http://nhkuma.blogspot.jp/,random dispersal - Atom,http://nhkuma.blogspot.com/feeds/posts/default
+http://nhkuma.blogspot.jp/,random dispersal - RSS,http://nhkuma.blogspot.com/feeds/posts/default?alt=rss
+http://takeshid.hatenadiary.jp/,Atom,http://takeshid.hatenadiary.jp/feed
+http://takeshid.hatenadiary.jp/,RSS2.0,http://takeshid.hatenadiary.jp/rss
+http://postd.cc/,RSS,http://postd.cc/feed/
+http://leeswijzer.hatenablog.com/,Atom,http://leeswijzer.hatenablog.com/feed
+http://leeswijzer.hatenablog.com/,RSS2.0,http://leeswijzer.hatenablog.com/rss
+https://healthyalgorithms.com/,Healthy Algorithms » Feed,https://healthyalgorithms.com/feed/
+https://healthyalgorithms.com/,Healthy Algorithms » Comments Feed,https://healthyalgorithms.com/comments/feed/
+http://blog.shakirm.com/,The Spectator » Feed,http://blog.shakirm.com/feed/
+http://blog.shakirm.com/,The Spectator » Comments Feed,http://blog.shakirm.com/comments/feed/
+http://oscillograph.hateblo.jp/,Atom,http://oscillograph.hateblo.jp/feed
+http://oscillograph.hateblo.jp/,RSS2.0,http://oscillograph.hateblo.jp/rss
+http://wafdata.hatenablog.com/,Atom,http://wafdata.hatenablog.com/feed
+http://wafdata.hatenablog.com/,RSS2.0,http://wafdata.hatenablog.com/rss
+http://wildpie.hatenablog.com/,Atom,http://wildpie.hatenablog.com/feed
+http://wildpie.hatenablog.com/,RSS2.0,http://wildpie.hatenablog.com/rss
+http://laughing.hatenablog.com/,Atom,http://laughing.hatenablog.com/feed
+http://laughing.hatenablog.com/,RSS2.0,http://laughing.hatenablog.com/rss
+http://machine-learning.hatenablog.com/,Atom,http://machine-learning.hatenablog.com/feed
+http://machine-learning.hatenablog.com/,RSS2.0,http://machine-learning.hatenablog.com/rss
+http://hi-king.hatenablog.com/,Atom,http://hi-king.hatenablog.com/feed
+http://hi-king.hatenablog.com/,RSS2.0,http://hi-king.hatenablog.com/rss
+http://www.computervisionblog.com/,Tombone's Computer Vision Blog - Atom,http://www.computervisionblog.com/feeds/posts/default
+http://www.computervisionblog.com/,Tombone's Computer Vision Blog - RSS,http://www.computervisionblog.com/feeds/posts/default?alt=rss
+http://bicycle1885.hatenablog.com/,Atom,http://bicycle1885.hatenablog.com/feed
+http://bicycle1885.hatenablog.com/,RSS2.0,http://bicycle1885.hatenablog.com/rss
+https://blog.recyclebin.jp/,捨てられたブログ » フィード,https://blog.recyclebin.jp/feed
+https://blog.recyclebin.jp/,捨てられたブログ » コメントフィード,https://blog.recyclebin.jp/comments/feed
+https://shapeofdata.wordpress.com/,The Shape of Data » Feed,https://shapeofdata.wordpress.com/feed/
+https://shapeofdata.wordpress.com/,The Shape of Data » Comments Feed,https://shapeofdata.wordpress.com/comments/feed/
+http://statchiraura.blog.fc2.com/,RSS,http://statchiraura.blog.fc2.com/?xml
+http://soonraah.hatenablog.com/,Atom,http://soonraah.hatenablog.com/feed
+http://soonraah.hatenablog.com/,RSS2.0,http://soonraah.hatenablog.com/rss
+http://yukinoi.hatenablog.com/,Atom,http://yukinoi.hatenablog.com/feed
+http://yukinoi.hatenablog.com/,RSS2.0,http://yukinoi.hatenablog.com/rss
+http://sinhrks.hatenablog.com/,Atom,http://sinhrks.hatenablog.com/feed
+http://sinhrks.hatenablog.com/,RSS2.0,http://sinhrks.hatenablog.com/rss
+http://rion778.hatenablog.com/,Atom,http://rion778.hatenablog.com/feed
+http://rion778.hatenablog.com/,RSS2.0,http://rion778.hatenablog.com/rss
+http://ito-hi.blog.so-net.ne.jp/,RSS,http://ito-hi.blog.so-net.ne.jp/index.rdf
+http://ito-hi.blog.so-net.ne.jp/,Atom,http://ito-hi.blog.so-net.ne.jp/atom.xml
+http://andrewgelman.com/,"Statistical Modeling, Causal Inference, and Social Science » Feed",http://andrewgelman.com/feed/
+http://andrewgelman.com/,"Statistical Modeling, Causal Inference, and Social Science » Comments Feed",http://andrewgelman.com/comments/feed/
+http://ouzor.github.io/,Juuso Parkkinen - Juuso's personal web page,http://ouzor.github.io/feed.xml
+http://blog-jp.treasuredata.com/,Atom,http://blog-jp.treasuredata.com/feed
+http://blog-jp.treasuredata.com/,RSS2.0,http://blog-jp.treasuredata.com/rss
+http://nakhirot.hatenablog.com/,Atom,http://nakhirot.hatenablog.com/feed
+http://nakhirot.hatenablog.com/,RSS2.0,http://nakhirot.hatenablog.com/rss
+http://pingpongpangpong.blogspot.jp/,white page - Atom,http://pingpongpangpong.blogspot.com/feeds/posts/default
+http://pingpongpangpong.blogspot.jp/,white page - RSS,http://pingpongpangpong.blogspot.com/feeds/posts/default?alt=rss
+http://highschoolstudent.hatenablog.com/,Atom,http://highschoolstudent.hatenablog.com/feed
+http://highschoolstudent.hatenablog.com/,RSS2.0,http://highschoolstudent.hatenablog.com/rss
+http://aial.shiroyagi.co.jp/,RSS 2.0,http://aial.shiroyagi.co.jp/feed/
+http://aial.shiroyagi.co.jp/,RSS .92,http://aial.shiroyagi.co.jp/feed/rss/
+http://aial.shiroyagi.co.jp/,カメリオ開発者ブログ » フィード,http://aial.shiroyagi.co.jp/feed/
+http://aial.shiroyagi.co.jp/,カメリオ開発者ブログ » コメントフィード,http://aial.shiroyagi.co.jp/comments/feed/
+http://kazoo04.hatenablog.com/,Atom,http://kazoo04.hatenablog.com/feed
+http://kazoo04.hatenablog.com/,RSS2.0,http://kazoo04.hatenablog.com/rss
+http://karpathy.github.io/,Andrej Karpathy blog posts,http://karpathy.github.io/feed.xml
+http://hiratake55.hatenadiary.jp/,Atom,http://hiratake55.hatenadiary.jp/feed
+http://hiratake55.hatenadiary.jp/,RSS2.0,http://hiratake55.hatenadiary.jp/rss
+http://abicky.hatenablog.jp/,Atom,http://abicky.hatenablog.jp/feed
+http://abicky.hatenablog.jp/,RSS2.0,http://abicky.hatenablog.jp/rss
+http://y-uti.hatenablog.jp/,Atom,http://y-uti.hatenablog.jp/feed
+http://y-uti.hatenablog.jp/,RSS2.0,http://y-uti.hatenablog.jp/rss
+http://mockquant.blogspot.jp/,HOXO-M  - anonymous data analyst group in Japan -   - Atom,http://mockquant.blogspot.com/feeds/posts/default
+http://mockquant.blogspot.jp/,HOXO-M  - anonymous data analyst group in Japan -   - RSS,http://mockquant.blogspot.com/feeds/posts/default?alt=rss
+http://opisthokonta.net/,opisthokonta.net » Feed,http://opisthokonta.net/?feed=rss2
+http://opisthokonta.net/,opisthokonta.net » Comments Feed,http://opisthokonta.net/?feed=comments-rss2
+http://ill-identified.hatenablog.com,Atom,http://ill-identified.hatenablog.com/feed
+http://ill-identified.hatenablog.com,RSS2.0,http://ill-identified.hatenablog.com/rss
+http://estrellita.hatenablog.com,Atom,http://estrellita.hatenablog.com/feed
+http://estrellita.hatenablog.com,RSS2.0,http://estrellita.hatenablog.com/rss
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hamadakoichi,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/n_shuyo,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/n_shuyo,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/n_shuyo,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/n_shuyo,RSS 2.0,http://d.hatena.ne.jp/n_shuyo/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/hamadakoichi,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hamadakoichi,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/repose,RSS 2.0,http://d.hatena.ne.jp/repose/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hamadakoichi,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/rikunora,RSS 2.0,http://d.hatena.ne.jp/rikunora/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hamadakoichi,RSS 2.0,http://d.hatena.ne.jp/hamadakoichi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/MikuHatsune,RSS 2.0,http://d.hatena.ne.jp/MikuHatsune/rss2
+http://d.hatena.ne.jp/hoxo_m,RSS 2.0,http://d.hatena.ne.jp/hoxo_m/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/dichika,RSS 2.0,http://d.hatena.ne.jp/dichika/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+http://d.hatena.ne.jp/jetbead,RSS 2.0,http://d.hatena.ne.jp/jetbead/rss2
+http://d.hatena.ne.jp/teramonagi,RSS 2.0,http://d.hatena.ne.jp/teramonagi/rss2
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/ynakayama,Atom Feed,https://qiita.com/ynakayama/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kenmatsu4,Atom Feed,https://qiita.com/kenmatsu4/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kenmatsu4,Atom Feed,https://qiita.com/kenmatsu4/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kenmatsu4,Atom Feed,https://qiita.com/kenmatsu4/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/shima_x,Atom Feed,https://qiita.com/shima_x/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kenmatsu4,Atom Feed,https://qiita.com/kenmatsu4/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/ynakayama,Atom Feed,https://qiita.com/ynakayama/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/masasora,Atom Feed,https://qiita.com/masasora/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/yuifu,Atom Feed,https://qiita.com/yuifu/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/siero5335,Atom Feed,https://qiita.com/siero5335/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/kohske,Atom Feed,https://qiita.com/kohske/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/Quasi-quant2010,Atom Feed,https://qiita.com/Quasi-quant2010/feed
+https://qiita.com/kohske,Atom Feed,https://qiita.com/kohske/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/kohske,Atom Feed,https://qiita.com/kohske/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/kohske,Atom Feed,https://qiita.com/kohske/feed
+https://qiita.com/yukinoi,Atom Feed,https://qiita.com/yukinoi/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/shima_x,Atom Feed,https://qiita.com/shima_x/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/ynakayama,Atom Feed,https://qiita.com/ynakayama/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/icoxfog417,Atom Feed,https://qiita.com/icoxfog417/feed
+https://qiita.com/ynakayama,Atom Feed,https://qiita.com/ynakayama/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/Quasi-quant2010,Atom Feed,https://qiita.com/Quasi-quant2010/feed
+https://qiita.com/tn1031,Atom Feed,https://qiita.com/tn1031/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/nakamichi,Atom Feed,https://qiita.com/nakamichi/feed
+https://qiita.com/wakuteka,Atom Feed,https://qiita.com/wakuteka/feed
+https://qiita.com/airtoxin,Atom Feed,https://qiita.com/airtoxin/feed
+https://qiita.com/yamano357,Atom Feed,https://qiita.com/yamano357/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/hoxo_m,Atom Feed,https://qiita.com/hoxo_m/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/Quasi-quant2010,Atom Feed,https://qiita.com/Quasi-quant2010/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/miyamotok0105,Atom Feed,https://qiita.com/miyamotok0105/feed
+https://qiita.com/TomokIshii,Atom Feed,https://qiita.com/TomokIshii/feed
+https://qiita.com/kazutan,Atom Feed,https://qiita.com/kazutan/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+https://qiita.com/uri,Atom Feed,https://qiita.com/uri/feed
+https://qiita.com/kenmatsu4,Atom Feed,https://qiita.com/kenmatsu4/feed
+https://qiita.com/kohske,Atom Feed,https://qiita.com/kohske/feed
+https://qiita.com/GushiSnow,Atom Feed,https://qiita.com/GushiSnow/feed
+NA,Atom Feed,NA
+https://qiita.com/tn1031,Atom Feed,https://qiita.com/tn1031/feed

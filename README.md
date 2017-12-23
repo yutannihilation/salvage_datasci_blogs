@@ -352,18 +352,21 @@ RSSどこ...？
 ----
 
 ``` r
-rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita)
-
-write_csv(rss_all, "rss_all.csv")
-```
-
-``` r
-rss_all %>%
+rss_all <- bind_rows(df_rss, rss_hatena, rss_qiita) %>%
   transmute(website,
             title,
             href = if_else(startsWith(href, "http"),
                            href,
-                           str_c(website, str_sub(href, start = 2)))) %>%
+                           str_c(website, str_sub(href, start = 2))))
+
+write_csv(rss_all, "rss_all.csv")
+```
+
+結果
+----
+
+``` r
+rss_all %>%
   knitr::kable(format = "markdown")
 ```
 
